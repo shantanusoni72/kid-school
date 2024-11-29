@@ -1,0 +1,52 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-inline: 60px;
+    padding-block: 10px;
+}
+
+.header-logo {
+    width: 9%;
+}
+
+.header-logo img {
+    width: 100%;
+}
+
+.header-menu ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.header-menu li img.show {
+    display: inline-flex;
+}
+
+.header-menu li img {
+    width: 20px;
+    display: none;
+}
+
+.header-menu li > *:hover {
+    color: var(--gold);
+}
+
+.header-menu li a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: calc(var(--h4) + 2px);
+    font-weight: var(--fw);
+}
+
+.header-end {
+    display: flex;
+    gap: 20px;
+}
+
+.header-end a {
+    font-size: calc(var(--h4) + 5px);
+    text-decoration: none;
+    color: var(--black);
+}

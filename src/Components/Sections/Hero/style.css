@@ -1,0 +1,120 @@
+@keyframes rockshake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+.hero .carousel-item {
+    height: 700px;
+    border: 1px solid red;
+}
+
+.hero .react-multiple-carousel__arrow--left {
+    width: 120px;
+    min-height: 60px;
+    background-color: transparent;
+    background-image: url('C:\Users\Cloud1 Web Solutions\Desktop\Shantanu\kids-cool-theme\public\assets\left-rocket.svg') !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    transform-origin: center;
+    animation: 3s ease-in-out 0s infinite alternate both rockshake;
+}
+
+.hero .react-multiple-carousel__arrow--left:hover {
+    background-color: transparent;
+}
+
+.hero .react-multiple-carousel__arrow--left::before {
+    content: none !important;
+}
+
+.hero .react-multiple-carousel__arrow--right {
+    width: 120px;
+    min-height: 60px;
+    background-color: transparent;
+    background-image: url('C:\Users\Cloud1 Web Solutions\Desktop\Shantanu\kids-cool-theme\public\assets\right-rocket.svg') !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    color: red;
+    transform-origin: center;
+    animation: 3s ease-in-out 0s infinite alternate both rockshake;
+}
+
+.hero .react-multiple-carousel__arrow--right:hover {
+    background-color: transparent;
+}
+
+.hero .react-multiple-carousel__arrow--right::before {
+    content: none !important;
+}
+
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.carousel-item {
+    color: var(--white);
+}
+
+.carousel-item h1 {
+    font-size: 200px;
+}
+
+.carousel-item h2 {
+    font-size: 70px;
+}
+
+.carousel-item h3 {
+    font-size: 50px;
+}
+
+.carousel-item a {
+    padding: 0.9em 2em;
+    font-size: calc(var(--h4) + 2px);
+    background-color: var(--pink);
+    color: var(--white);
+    border: 0px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.carousel-item a:hover {
+    background-color: var(--white);
+    color: var(--blue-light);
+    transition: 0.4s;
+}
