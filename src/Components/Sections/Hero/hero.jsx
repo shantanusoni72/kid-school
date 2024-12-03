@@ -24,15 +24,25 @@ export default function Hero() {
     return (
         <div className='hero'>
             <Carousel responsive={responsive} infinite={true}>
-                <div className='carousel-item' style={{backgroundImage: `url('assets/slider-1.jpg')`}}>Item 1</div>
-                <div className='carousel-item' style={{backgroundImage: `url('assets/slider-2.jpg')`}}>
+                <div className='carousel-item' style={{ backgroundImage: `url('assets/slider-1.jpg')` }}>
+                    <h2 className='heading xl'>Learning With Fun</h2>
+                    <h3 className='sub-heading xl'>Center For Excellence</h3>
+                    <a href='#'>Know More</a>
+                </div>
+                <div className='carousel-item' style={{ backgroundImage: `url('assets/slider-2.jpg')` }}>
                     <h1>20%</h1>
                     <h2>Flat Off</h2>
                     <h3>On Registration</h3>
                     <a href='#'>Know More</a>
                 </div>
-                <div className='carousel-item' style={{backgroundImage: `url('assets/slider-3.jpg')`}}>Item 3</div>
+                <div className='carousel-item' style={{ backgroundImage: `url('assets/slider-3.jpg')` }}>
+                    <h2 className='heading xl'>Children Focused Education</h2>
+                    <h3 className='sub-heading xl'>Early Education</h3>
+                    <a href='#'>Know More</a>
+                </div>
             </Carousel>
+            {/* <div className="cloud-banner orange"></div>
+            <div className="cloud-banner white"></div> */}
         </div>
     )
 }

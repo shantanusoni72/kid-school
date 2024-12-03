@@ -1,0 +1,134 @@
+@keyframes shadow_dancing {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    50% {
+        transform: translate(20px, 10px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-block: 50px;
+    padding-inline: 140px;
+    background-color: transparent;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-image: linear-gradient(var(--white), var(--gold-lighter));
+}
+
+.about-row-2 {
+    display: flex;
+    justify-content: end;
+    padding-inline: 120px;
+}
+
+.about-image {
+    height: auto;
+}
+
+.about-image img.mask {
+    position: absolute;
+    width: 35%;
+    color: var(--gold);
+    transform: scaleY(1.1);
+    animation: shadow_dancing infinite 15s;
+}
+
+.about-image img {
+    width: 450px;
+    mask: url('../../../../public/assets/image_mask.png');
+    -webkit-mask-size: contain;
+    -webkit-mask-position: bottom center;
+    -webkit-mask-repeat: repeat-x;
+}
+
+.about-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.about-row-2-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* width: 30%; */
+    border: 1px solid red;
+}
+
+.about-row-2-text label {
+    font-size: calc(var(--h4) + 2px);
+    font-family: var(--ff-secondary);
+    font-weight: calc(var(--fw) - 200);
+    color: var(--pink);
+}
+
+.about-row-2-text h2 {
+    font-size: var(--h1);
+}
+
+.about-row-2-text p {
+    font-size: var(--h4);
+    color: var(--grey);
+}
+
+.about-row-2-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-row-2-image img.child {
+    width: 250px;
+}
+
+.about-row-2-image img.rocket {
+    width: 150px;
+}
+
+.about-row-2-image img.curl {
+    width: 100px;
+    transform: rotate(-25deg);
+}
+
+@keyframes morph_tp {
+    0% {
+        transform: translateY(0px);
+    }
+    30% {
+        transform: translateY(60px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    70% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.img_path.img_path_two {
+    -webkit-animation: morph_tp 6s linear infinite;
+    animation: morph_tp 6s linear infinite;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.line {
+    width: 50%;
+}

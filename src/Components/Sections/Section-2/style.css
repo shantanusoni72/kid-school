@@ -1,0 +1,78 @@
+@keyframes handsMovement {
+    0% {
+        transform: translateY(-7px);
+    }
+    25% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(7px);
+    }
+    75% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-7px);
+    }
+}
+
+.section_2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    gap: 20px;
+    padding-block: 80px;
+}
+
+.section_2_text {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 150px;
+}
+
+.section_2_text label {
+    font-size: calc(var(--h4) + 2px);
+    font-family: var(--ff-secondary);
+    font-weight: calc(var(--fw) - 200);
+    color: var(--pink);
+}
+
+.section_2_text h2 {
+    font-size: var(--h1);
+}
+
+.section_2_text p {
+    font-size: var(--h4);
+    color: var(--grey);
+    margin-bottom: 18px;
+}
+
+.section_2_image {
+    display: flex;
+    gap: 5px;
+}
+
+.section_2_image img {
+    width: 35%;
+    height: auto;
+}
+
+.section_2_image img:first-child {
+    border-bottom-right-radius: 100%;
+    margin: 0px -20px 0px 20px;
+}
+
+.section_2_image img:last-child {
+    border-top-left-radius: 100%;
+    margin: 0px 20px 0px -20px;
+}
+
+.hands {
+    width: 8%;
+    position: absolute;
+    margin-top: -400px;
+    right: -1.1px;
+    animation: handsMovement infinite 5s;
+}

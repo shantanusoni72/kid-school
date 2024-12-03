@@ -1,0 +1,17 @@
+.garden {
+    min-height: 100px;
+    background-image: url('https://wdtninos.wpengine.com/wp-content/uploads/2022/10/gorden_images.png');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.garden-inner {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 90px;
+}
+
+.garden-inner img {
+    width: 8%;
+}

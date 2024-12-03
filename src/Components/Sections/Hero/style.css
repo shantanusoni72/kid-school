@@ -35,8 +35,21 @@
     }
 }
 
+@keyframes textFickle {
+    0% {
+        text-shadow: 4px 4px var(--grey);
+    }
+    100% {
+        text-shadow: 5px 5px var(--grey);
+    }
+}
+
+.hero {
+    width: 100%;
+}
+
 .hero .carousel-item {
-    height: 700px;
+    height: 800px;
     border: 1px solid red;
 }
 
@@ -84,7 +97,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 27px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 133%;
 }
 
 .carousel-item {
@@ -93,6 +109,7 @@
 
 .carousel-item h1 {
     font-size: 200px;
+    animation: 0.3s ease-in-out 0s infinite alternate both textFickle;
 }
 
 .carousel-item h2 {
@@ -111,10 +128,48 @@
     border: 0px;
     border-radius: 30px;
     text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transform: skew(0deg);
+    position: relative;
+    z-index: 1;
 }
 
 .carousel-item a:hover {
     background-color: var(--white);
     color: var(--blue-light);
-    transition: 0.4s;
+    transform: skew(30deg);
+}
+
+.heading.xl {
+    text-align: center;
+    line-height: 1.2em;
+    width: 50%;
+    font-size: 100px;
+    animation: 0.3s ease-in-out 0s infinite alternate both textFickle;
+}
+
+.sub-heading.xl {
+    font-size: 40px;
+}
+
+.cloud-banner.orange {
+    position: relative;
+    margin-top: -100px;
+    padding-block: 50px;
+    width: 100%;
+    height: 70px;
+    mask: url('../../../../public/assets/cloud-1.png');
+    background-color: var(--gold);
+    -webkit-mask-image: url('../../../../public/assets/cloud-1.png');
+    -webkit-mask-size: contain;
+    -webkit-mask-position: bottom center;
+    -webkit-mask-repeat: repeat-x;
+}
+
+.cloud-banner.white {
+    padding-block: 50px;
+    width: 100%;
+    height: 70px;
+    mask: url('../../../../public/assets/cloud-1.png');
+    background-color: var(--white);
 }

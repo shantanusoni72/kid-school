@@ -1,14 +1,24 @@
 /* Nunito Font */
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Syne:wght@400..800&display=swap');
 
+/* Bubblegum Sans */
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Catamaran:wght@100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Syne:wght@400..800&display=swap');
+
 :root {
     --ff-primary: "Nunito", sans-serif;
+    --ff-secondary: "Bubblegum Sans", sans-serif;
+    --h1: 32px;
+    --h2: 24px;
+    --h3: 19px;
     --h4: 16px;
     --fw: 600;
     --red: #EB1551;
     --pink: #EB1551;
     --gold: #F7941E;
     --blue-light: #61BFC9;
+    --blue: #0A6375;
+    --gold-lighter: #FFEFE4;
+    --grey: #6B6B84;
     --black: #000000;
     --white: #FFFFFF;
 }
