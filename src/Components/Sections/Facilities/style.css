@@ -1,0 +1,75 @@
+.facilities {
+    padding-block: 80px;
+    background-color: var(--gold-lighter);
+}
+
+.facilities-row-2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+    padding-block: 80px;
+}
+
+.facilities-card {
+    width: 480px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    gap: 15px;
+    background-color: var(--blue);
+    mask-image: url('../../../../public/assets/custom-shape-bg-layer.png');
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+    transition: 0.49s;
+}
+
+.facilities-card:hover {
+    background-color: var(--pink);
+}
+
+.facilities-card img {
+    width: 100%;
+    mask-image: url('../../../../public/assets/mask_image_imagebox.png');
+    mask-size: cover;
+    mask-position: center;
+    mask-repeat: no-repeat;
+}
+
+.facilities-card h1 {
+    font-size: var(--h2);
+}
+
+.facilities-card p {
+    padding-inline: 8px;
+    font-size: var(--h4);
+}
+
+.facilities-card-lower {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.svg {
+    width: 75px;
+    height: 75px;
+    background-color: var(--blue-light);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    margin-top: -10%;
+    margin-left: -2%;
+    position: relative;
+    z-index: 10;
+}
+
+.button-div {
+    margin-top: -8%;
+    position: relative;
+    z-index: 10;
+}

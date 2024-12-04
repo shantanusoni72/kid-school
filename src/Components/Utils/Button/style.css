@@ -8,6 +8,16 @@
     text-decoration: none;
 }
 
+.button.small a {
+    padding: 0.5em 2em;
+    font-size: calc(var(--h4) + 2px);
+    background-color: var(--pink);
+    color: var(--white);
+    border: 0px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
 .button a:hover {
     background-color: var(--white);
     color: var(--blue-light);

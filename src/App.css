@@ -27,4 +27,15 @@
     font-family: var(--ff-primary);
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+}
+
+.hc {
+    width: 55%;
+    height: 10px;
+    background-image: url('../public//assets/line.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-inline: auto;
+    transform: rotate(180deg);
 }

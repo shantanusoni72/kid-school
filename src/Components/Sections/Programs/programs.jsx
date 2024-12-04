@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../../Utils/Button/button';
+import Starter from '../../Utils/Starter/starter';
 import './style.css';
 
 export default function Programs() {
@@ -51,21 +52,15 @@ export default function Programs() {
 
     return (
         <div className='program-container'>
-            <div className="program-row-1">
-                <div className="program-row-1-col-1">
-                    <img src='assets/planet.svg' alt='planet' />
-                </div>
-                <div className="program-row-1-col-2">
-                    <img src='assets/calci.svg' alt='mechanical calculator' />
-                    <h1>{program.text.starter}</h1>
-                    <h2>{program.text.heading}</h2>
-                    <p>{program.text.paragraph}</p>
-                </div>
-                <div className="program-row-1-col-3">
-                    <img src='assets/123.svg' alt='abc' />
-                    <img src='assets/pen.svg' alt='pen' />
-                </div>
-            </div>
+            <Starter
+                starter={program.text.starter}
+                heading={program.text.heading}
+                paragraph={program.text.paragraph} 
+                starter_image='assets/calci.svg'
+                image_1={{'image': 'assets/planet.svg', 'animationVisibility': true}}
+                image_2={{'image': 'assets/123.svg', 'lighterOpacity': true}}
+                image_3='assets/pen.svg'
+            />
             <div className="program-row-2">
                 {
                     program.cards.map((item, index) => (
