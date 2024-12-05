@@ -41,8 +41,8 @@ export default function Hero() {
                     <a href='#'>Know More</a>
                 </div>
             </Carousel>
-            {/* <div className="cloud-banner orange"></div>
-            <div className="cloud-banner white"></div> */}
+            <div className="cloud-banner orange"></div>
+            <div className="cloud-banner white"></div>
         </div>
     )
 }

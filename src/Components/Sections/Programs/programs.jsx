@@ -55,11 +55,15 @@ export default function Programs() {
             <Starter
                 starter={program.text.starter}
                 heading={program.text.heading}
-                paragraph={program.text.paragraph} 
+                paragraph={program.text.paragraph}
                 starter_image='assets/calci.svg'
-                image_1={{'image': 'assets/planet.svg', 'animationVisibility': true}}
-                image_2={{'image': 'assets/123.svg', 'lighterOpacity': true}}
-                image_3='assets/pen.svg'
+                container_1={
+                    <img className='planet_1' src='assets/planet.svg' alt='planet_1' />
+                }
+                container_2={<>
+                    <img className='abc_img' src='assets/123.svg' alt='abc' />
+                    <img className='pen_img' src='assets/pen.svg' alt='pen' />
+                </>}
             />
             <div className="program-row-2">
                 {
@@ -76,7 +80,9 @@ export default function Programs() {
                 }
             </div>
             <div className="program-row-3">
-                <img src='assets/drawn-rocket.svg' alt='sketch rocket' />
+                <div className="rocket-outer">
+                    <img className='sketch_rocket' src='assets/drawn-rocket.svg' alt='sketch rocket' />
+                </div>
             </div>
             <div className="program-row-4">
                 <Button text='View More' link='/' />

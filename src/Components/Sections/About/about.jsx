@@ -7,18 +7,19 @@ export default function About() {
     <div className='about-container'>
       <div className='about'>
         <div className="about-image">
-          <ellipse transform="matrix(0.9995 -3.077658e-02 3.077658e-02 0.9995 -2.054 17.9872)" class="img_path img_path_two" cx="583.3" cy="75.7" rx="74.8" ry="65.8"></ellipse>
-          <img className='mask' src='assets/image_mask.png' alt='masking' />
-          <img src='assets/about.jpg' alt='baby' />
+          <img className='starMourning' src='assets/star.svg' alt='star' />
+          <img className='mask' src='assets/heart.svg' alt='masking' />
+          <img className='baby_img' src='assets/about.jpg' alt='baby' />
         </div>
         <div className="about-text">
           <div className="about-row-2-text">
+            <img src='assets/cap.svg' alt='cap' />
             <label>About Us</label>
             <h2>We Educate Knowledge & Essential Skills!</h2>
             <p>
               Phasellus gravida lacus quis eros lobortis, nec dapibus quam gravida. Duis sed augue vitae felis pellentesque varius nec quis nunc. Morbi mauris augue, pulvinar quis luctus eget, pretium sed massa.
             </p>
-            <Button text='Read More' link='/' />
+            <Button text='Read More' link='/' type='small' />
           </div>
           <div className="about-row-2-image">
             <img className='rocket' src='assets/rocket.svg' alt='rocket' />

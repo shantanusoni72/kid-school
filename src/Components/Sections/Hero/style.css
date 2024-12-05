@@ -2,34 +2,43 @@
     0% {
         transform: translate(1px, 1px) rotate(0deg);
     }
+
     10% {
         transform: translate(-1px, -2px) rotate(-1deg);
     }
+
     20% {
         transform: translate(-3px, 0px) rotate(1deg);
     }
+
     30% {
         transform: translate(3px, 2px) rotate(0deg);
     }
+
     40% {
         transform: translate(1px, -1px) rotate(1deg);
     }
+
     50% {
         transform: translate(-1px, 2px) rotate(-1deg);
     }
+
     60% {
         transform: translate(-3px, 1px) rotate(0deg);
     }
+
     70% {
         transform: translate(3px, 1px) rotate(-1deg);
     }
+
     80% {
         transform: translate(-1px, -1px) rotate(1deg);
     }
+
     90% {
         transform: translate(1px, 2px) rotate(0deg);
     }
-    
+
     100% {
         transform: translate(1px, -2px) rotate(-1deg);
     }
@@ -39,6 +48,7 @@
     0% {
         text-shadow: 4px 4px var(--grey);
     }
+
     100% {
         text-shadow: 5px 5px var(--grey);
     }
@@ -50,7 +60,6 @@
 
 .hero .carousel-item {
     height: 800px;
-    border: 1px solid red;
 }
 
 .hero .react-multiple-carousel__arrow--left {
@@ -79,7 +88,6 @@
     background-image: url('C:\Users\Cloud1 Web Solutions\Desktop\Shantanu\kids-cool-theme\public\assets\right-rocket.svg') !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
-    color: red;
     transform-origin: center;
     animation: 3s ease-in-out 0s infinite alternate both rockshake;
 }
@@ -159,17 +167,23 @@
     width: 100%;
     height: 70px;
     mask: url('../../../../public/assets/cloud-1.png');
-    background-color: var(--gold);
-    -webkit-mask-image: url('../../../../public/assets/cloud-1.png');
-    -webkit-mask-size: contain;
-    -webkit-mask-position: bottom center;
-    -webkit-mask-repeat: repeat-x;
+    background-color: var(--white);
+    opacity: 0.95;
+    mask-image: url('../../../../public/assets/cloud-1.png');
+    mask-size: 100%;
+    mask-position: center;
+    mask-repeat: repeat-x;
 }
 
 .cloud-banner.white {
+    margin-top: -6.3%;
     padding-block: 50px;
     width: 100%;
     height: 70px;
     mask: url('../../../../public/assets/cloud-1.png');
+    mask-size: 95%;
+    mask-position: left;
+    mask-repeat: repeat-x;
     background-color: var(--white);
+    opacity: 1;
 }

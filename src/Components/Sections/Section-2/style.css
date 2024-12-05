@@ -37,16 +37,32 @@
     font-family: var(--ff-secondary);
     font-weight: calc(var(--fw) - 200);
     color: var(--pink);
+    display: flex;
+    align-items: end;
+    gap: 20px;
+}
+
+.section_2_text label img.cap {
+    width: 50px;
+    opacity: 0.3;
+    position: absolute;
+    margin-top: -10%;
+}
+
+.section_2_text label img.horse {
+    width: 100px;
+    animation: rockUpDown infinite 4s;
 }
 
 .section_2_text h2 {
-    font-size: var(--h1);
+    font-size: calc(var(--h1) - 5px);
 }
 
 .section_2_text p {
     font-size: var(--h4);
     color: var(--grey);
     margin-bottom: 18px;
+    line-height: 25px;
 }
 
 .section_2_image {
@@ -55,7 +71,7 @@
 }
 
 .section_2_image img {
-    width: 35%;
+    width: 40%;
     height: auto;
 }
 

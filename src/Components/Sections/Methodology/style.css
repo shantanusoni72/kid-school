@@ -1,0 +1,93 @@
+.methodology-row-1 {
+    display: flex;
+    padding-block: 40px;
+}
+
+.methodology-row-1-col-1 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-inline: 120px;
+}
+
+.methodology-row-1-col-1 label {
+    font-size: var(--h3);
+    font-family: var(--ff-secondary);
+    color: var(--pink);
+}
+
+.methodology-row-1-col-1 h1 {
+    font-size: var(--h1);
+}
+
+.methodology-row-1-col-1 p {
+    font-size: var(--h4);
+    color: var(--grey);
+}
+
+.methodology-row-1-col-2 {
+    width: 60%;
+}
+
+.methodology-row-1-col-2 img {
+    width: 75%;
+    border: 10px solid var(--gold);
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.methodology-row-2 {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-block: 40px;
+}
+
+.methodology-row-2-card {
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hightlighted {
+    padding: 60px 60px 60px 60px;
+    color: var(--white);
+    mask-image: url('../../../../public/assets/age_mask.svg');
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    transition: 0.5s;
+}
+
+.hightlighted:hover {
+    background-color: var(--pink) !important;
+}
+
+.hightlighted.selected {
+    background-color: var(--pink) !important;
+}
+
+.hightlighted h1 {
+    font-size: calc(var(--h1) + 12px);
+    font-family: var(--ff-secondary);
+}
+
+.hightlighted p {
+    font-size: calc(var(--h2) + 4px);
+    font-family: var(--ff-secondary);
+}
+
+.methodology-row-2-card a {
+    font-size: calc(var(--h2) + 4px);
+    font-family: var(--ff-secondary);
+    color: var(--pink);
+    text-decoration: none;
+}
+
+.methodology-row-2-card a.selected {
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+    text-decoration-style: wavy;
+    text-underline-offset: 9px;
+}

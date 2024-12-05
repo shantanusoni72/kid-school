@@ -4,8 +4,8 @@ import './style.css';
 export default function Starter(props) {
     return (
         <div className="starter-row-1">
-            <div className={`starter-row-1-col-1 ${props.image_1.animationVisibility ? '' : 'disabled'}`}>
-                <img src={props.image_1.image} alt='' />
+            <div className="starter-row-1-col-1">
+                {props.container_1}
             </div>
             <div className="starter-row-1-col-2">
                 <img src={props.starter_image} alt='' />
@@ -13,10 +13,8 @@ export default function Starter(props) {
                 <h2>{props.heading}</h2>
                 <p>{props.paragraph}</p>
             </div>
-            <div className={`starter-row-1-col-3 ${props.image_2.lighterOpacity ? '' : 'solid'}`}
-                style={{transform: `rotate(${props.image_2.rotation})`}}>
-                <img src={props.image_2.image} alt='' />
-                <img src={props.image_3} alt='' />
+            <div className="starter-row-1-col-3">
+                {props.container_2}
             </div>
         </div>
     )

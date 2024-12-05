@@ -21,9 +21,16 @@ export default function Intedu() {
                 heading='Bicultural Students'
                 paragraph='Semper cras auctor neque vitae tempus quam pellentesque nec nam. Egestas sed sed risus pretium quam vulputate dignissim. At lectus urna duis convallis convallis tellus id. Diam in arcu cursus euismod.'
                 starter_image='assets/cap.svg'
-                image_1={{ 'image': 'assets/rotating.svg', 'animationVisibility': false }}
-                image_2={{ 'image': 'assets/drawn-rocket.svg', 'lighterOpacity': false }}
-                image_3=''
+                container_1={<>
+                    <img className='rotating_img' src='assets/rotating.svg' alt='rotating' />
+                    <img className='house_img' src='assets/house.svg' alt='house' />
+                </>}
+                container_2={
+                    <img className='sketch_rocket_img' src='assets/drawn-rocket.svg' alt='sketch_rocket' />
+                }
+                // image_1={{ 'image': 'assets/rotating.svg', 'animationVisibility': false }}
+                // image_2={{ 'image': 'assets/drawn-rocket.svg', 'lighterOpacity': false }}
+                // image_3=''
             />
             {/* <div class="grid-container">
                 <div class="grid-item g1">

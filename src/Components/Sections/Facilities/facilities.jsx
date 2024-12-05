@@ -56,9 +56,12 @@ export default function Facilities() {
         heading='Engaging & Spacious School Campus'
         paragraph='Hise sed augue vitae felis pellentesque varius nec quis nunc. Morbi mauris augue, pulvinar quis luctus eget. Phasellus gravida lacus quis eros lobortis, nec dapibus quam gravida.'
         starter_image='assets/cap.svg'
-        image_1={{ 'image': 'assets/star.svg', 'animationVisibility': false }}
-        image_2={{ 'image': 'assets/planet_2.svg', 'lighterOpacity': false }}
-        image_3=''
+        container_1={
+          <img className='star_img' src='assets/star.svg' alt='star' />
+        }
+        container_2={
+          <img className='planet_2_img' src='assets/planet_2.svg' alt='planet_2' />
+        }
       />
       <div className="facilities-row-2">
         {

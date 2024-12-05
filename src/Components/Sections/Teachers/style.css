@@ -10,6 +10,11 @@
 .teacher_item {
     width: 300px !important;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-block: 40px;
 }
 
 .teacher_item img {
@@ -28,6 +33,20 @@
 .teacher_item p {
     font-size: var(--h4);
     color: var(--grey);
+}
+
+.teacher_item span {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.teacher_item a {
+    padding-block: 5px;
+    padding-inline: 10px;
+    background-color: var(--pink);
+    color: var(--white);
+    border-radius: 55% 45% 62% 38% / 42% 40% 60% 58%;
 }
 
 .react-multiple-carousel__arrow {
@@ -67,4 +86,10 @@
 
 .teacher_carousel .react-multiple-carousel__arrow--right::before {
     content: none !important;
+}
+
+.people_gossiping_img {
+    width: 120px;
+    opacity: 0.1;
+    transform: rotate(-15deg);
 }

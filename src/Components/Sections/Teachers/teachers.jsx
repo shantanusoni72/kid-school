@@ -162,9 +162,10 @@ export default function Teachers() {
                 heading='Teachers & Trainers'
                 paragraph='Chasellus gravida lacus quis eros lobortis, nec dapibus quam gravida. Duis sed augue vitae felis pellentesque varius nec quis nunc. Morbi mauris augue, pulvinar quis luctus eget.'
                 starter_image='assets/cap.svg'
-                image_1={{ 'image': 'assets/people_gossiping.svg', 'animationVisibility': false }}
-                image_2={{ 'image': '', 'lighterOpacity': false, 'rotation': '' }}
-                image_3=''
+                container_1={
+                    <img className='people_gossiping_img' src='assets/people_gossiping.svg' alt='people_gossiping' />
+                }
+                container_2={null}
             />
             <Carousel
                 responsive={responsive}
