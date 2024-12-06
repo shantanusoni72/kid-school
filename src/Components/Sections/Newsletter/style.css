@@ -1,3 +1,36 @@
+.newsletter {
+    padding-bottom: 50px;
+    background-color: #FEF9F5;
+}
+
 .ufo-outer {
-    transform: rotate(22deg);
+    transform: rotate(50deg) !important;
+    position: absolute;
+    margin-left: -10%;
+    margin-top: 1%;
+}
+
+.ufo-outer img {
+    width: 50%;
+    animation: floatPlanet infinite 8s;
+}
+
+.div_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    margin-left: 13%;
+    margin-top: -5.5%;
+}
+
+img.stars {
+    width: 70px;
+    transform: rotate(265deg);
+    margin-right: 90%;
+}
+
+img.nl_planet_1 {
+    width: 150px;
+    animation: floatPlanet infinite 8s;
 }

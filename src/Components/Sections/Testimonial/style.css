@@ -1,0 +1,117 @@
+.testimonial {
+    background-color: #FEF9F5;
+}
+
+.testimonial-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: end;
+}
+
+.testimonial-item-row-1 {
+    display: flex;
+    mask-image: url('../../../../public/assets/counter_bg_img.png');
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    background-color: var(--pink);
+    padding: 30px 40px 40px 40px;
+}
+
+.testimonial-item img.flowers {
+    width: 30%;
+}
+
+.testimonial-item-col-1 {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding-inline: 30px;
+}
+
+.testimonial-item-col-1 span {
+    display: flex;
+    gap: 4px;
+}
+
+.testimonial-item-col-1 span i {
+    color: var(--gold);
+}
+
+.testimonial-item-col-1 p {
+    font-size: var(--h4);
+    color: var(--white);
+}
+
+.testimonial-item-col-1 .signature h3 {
+    font-size: calc(var(--h3) + 1px);
+    color: var(--white);
+}
+
+.testimonial-item-col-1 .signature p {
+    font-size: calc(var(--h4) - 2px);
+    color: var(--white);
+}
+
+.testimonial-item-col-1-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonial-item-col-2 {
+    width: 30%;
+}
+
+.testimonial-item-col-2 img {
+    width: 30%;
+    border-radius: 100%;
+    border: 10px solid var(--gold);
+}
+
+.react-multiple-carousel__arrow {
+    min-width: 170px !important;
+    min-height: 70px !important;
+}
+
+.testimonial-carousel .react-multiple-carousel__arrow--left {
+    background-image: url('../../../../public/assets/spider-left.svg') !important;
+    background-repeat: no-repeat !important;
+    background-size: 90% !important;
+    background-color: transparent;
+    transform-origin: center;
+    animation: 3s ease-in-out 0s infinite alternate both rockshake;
+}
+
+.testimonial-carousel .react-multiple-carousel__arrow--left:hover {
+    background-color: transparent;
+}
+
+.testimonial-carousel .react-multiple-carousel__arrow--left::before {
+    content: none !important;
+}
+
+.testimonial-carousel .react-multiple-carousel__arrow--right {
+    background-image: url('../../../../public/assets/spider-right.svg') !important;
+    background-repeat: no-repeat !important;
+    background-size: 90% !important;
+    background-color: transparent;
+    transform-origin: center;
+    animation: 3s ease-in-out 0s infinite alternate both rockshake;
+}
+
+.testimonial-carousel .react-multiple-carousel__arrow--right:hover {
+    background-color: transparent;
+}
+
+.testimonial-carousel .react-multiple-carousel__arrow--right::before {
+    content: none !important;
+}
+
+.testimonial-item img.waves {
+    width: 70px;
+    color: var(--blue);
+}

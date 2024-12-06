@@ -8,6 +8,11 @@
     text-decoration: none;
 }
 
+.button a:hover {
+    background-color: var(--white);
+    color: var(--blue-light);
+}
+
 .button.small a {
     padding: 0.5em 2em;
     font-size: calc(var(--h4) + 2px);
@@ -18,7 +23,13 @@
     text-decoration: none;
 }
 
-.button a:hover {
-    background-color: var(--white);
-    color: var(--blue-light);
+.button.big_long a {
+    padding: 1em 3.5em;
+}
+
+@media screen and (max-width: 440px) {
+    .button.big_long a {
+        padding: 0.8em 2.7em;
+        font-size: calc(var(--h4) - 2px);
+    }
 }

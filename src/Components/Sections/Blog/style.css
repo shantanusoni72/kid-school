@@ -1,0 +1,118 @@
+.blog-container {
+    display: flex;
+    padding: 20px;
+    background-color: var(--blue);    
+}
+
+.blog-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 80px;
+}
+
+.blog-images {
+    width: 50%;
+}
+
+.blog-text-intro label {
+    font-size: calc(var(--h3) + 1px);
+    font-family: var(--ff-secondary);
+    color: var(--white);
+}
+
+.blog-text-intro h2 {
+    font-size: var(--h1);
+    color: var(--white);
+}
+
+.blogs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.blog {
+    display: flex;
+}
+
+.blog span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.blog span i {
+    color: var(--gold);
+}
+
+.blog span label {
+    font-size: var(--h4);
+    font-family: var(--ff-primary);
+    color: var(--white);
+}
+
+.blog div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.blog div h2 {
+    font-size: calc(var(--h3) + 1px);
+    color: var(--white);
+}
+
+.blog div p {
+    font-size: var(--h4);
+    color: var(--white);
+}
+
+.blog-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-images img.b1-bg {
+    width: 60%;
+}
+
+.blog-images img.b1 {
+    width: 25%;
+    mask-image: url('../../../../public/assets/custom-shape-bg-layer1a.svg');
+    mask-position: center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    position: absolute;
+}
+
+.blog-images img.b2 {
+    width: 40%;
+    border-radius: 100%;
+    box-shadow: 10px 10px var(--white);
+}
+
+.blog-container-top {
+    height: 150px;
+    mask-image: url('../../../../public/assets/wavebg-overlight-too-length.png');
+    mask-position: top;
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    background-color: var(--blue);
+    opacity: 0.1;
+}
+
+.blog-container-top.second {
+    height: 150px;
+    mask-image: url('../../../../public/assets/wavebg-overlight-too-length.png');
+    mask-position: top;
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    background-color: var(--blue);
+    opacity: 1;
+    transform: scaleX(-1);
+}

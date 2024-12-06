@@ -24,6 +24,13 @@
     transition: all 0.3s ease-out;
 }
 
+img.rainbow_img {
+    margin-top: -8%;
+    margin-left: -8%;
+    width: 15%;
+    position: absolute;
+}
+
 .activity_program_item h1 {
     font-size: var(--h2);
 }
@@ -72,4 +79,75 @@
 
 .activity_program_carousel .react-multiple-carousel__arrow--right::before {
     content: none !important;
+}
+
+@media screen and (max-width: 1024px) {
+    img.rainbow_img {
+        margin-top: -4%;
+        margin-left: -13%;
+        width: 14%;
+    }
+    
+    .activity_program_item img.profile {
+        width: 27%;
+        margin-bottom: 20px;
+    }
+
+    .activity_program_item p {
+        width: 60%;
+    }
+    
+    .activity_program_carousel .react-multiple-carousel__arrow--left {
+        background-size: 80% !important;
+        margin-left: 15%;
+        margin-top: 18%;
+    }
+    
+    .activity_program_carousel .react-multiple-carousel__arrow--right {
+        background-size: 80% !important;
+        margin-right: 10%;
+        margin-top: 18%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .activity_program_item img.profile {
+        width: 30%;
+    }
+
+    .activity_program_item p {
+        width: 70%;
+    }
+    
+    .activity_program_carousel .react-multiple-carousel__arrow--left {
+        background-size: 70% !important;
+        margin-left: 13%;
+    }
+    
+    .activity_program_carousel .react-multiple-carousel__arrow--right {
+        background-size: 70% !important;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .activity_program_item img.profile {
+        width: 60%;
+    }
+
+    .activity_program_item p {
+        width: 100%;
+    }
+    
+    .activity_program_carousel .react-multiple-carousel__arrow--left {
+        background-size: 70% !important;
+        margin-left: 0%;
+        margin-top: -30%;
+    }
+    
+    .activity_program_carousel .react-multiple-carousel__arrow--right {
+        background-size: 70% !important;
+        margin-right: -13%;
+        margin-top: -30%;
+    }
 }

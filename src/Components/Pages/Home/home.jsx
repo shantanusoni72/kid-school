@@ -8,8 +8,10 @@ import Garden from '../../Sections/Garden/garden';
 import Facilities from '../../Sections/Facilities/facilities';
 import Teachers from '../../Sections/Teachers/teachers';
 import ActivityProgram from '../../Sections/Activity Program/activity_program';
+import Blog from '../../Sections/Blog/blog';
 import Methodology from '../../Sections/Methodology/methodology';
 import Newsletter from '../../Sections/Newsletter/newsletter';
+import Testimonial from '../../Sections/Testimonial/testimonial';
 
 export default function Home() {
   return (
@@ -24,7 +26,9 @@ export default function Home() {
       <Teachers />
       <div className="hc"></div>
       <ActivityProgram />
+      <Blog />
       <Methodology />
+      <Testimonial />
       <Newsletter />
     </div>
   )

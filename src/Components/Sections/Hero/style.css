@@ -187,3 +187,17 @@
     background-color: var(--white);
     opacity: 1;
 }
+
+@media screen and (max-width: 1024px) {
+    .carousel-item {
+        gap: 20px;
+    }
+
+    .carousel-item h1 {
+        font-size: 100px;
+    }
+
+    .cloud-banner.orange {
+        margin-top: -265px;
+    }
+}

@@ -93,3 +93,33 @@
     opacity: 0.1;
     transform: rotate(-15deg);
 }
+
+@media screen and (max-width: 440px) {
+    .teacher_carousel .react-multiple-carousel__arrow--left {
+        background-image: url('../../../../public/assets/spider-left.svg') !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-color: transparent;
+        transform-origin: center;
+        animation: 3s ease-in-out 0s infinite alternate both rockshake;
+    }
+    
+    .teacher_carousel .react-multiple-carousel__arrow--left:hover {
+        background-color: transparent;
+    }
+    
+    .teacher_carousel .react-multiple-carousel__arrow--left::before {
+        content: none !important;
+    }
+    
+    .teacher_carousel .react-multiple-carousel__arrow--right {
+        background-size: 80% !important;
+        margin-top: -30%;
+        margin-right: -10%;
+    }
+
+    .teacher_carousel .react-multiple-carousel__arrow--left {
+        background-size: 80% !important;
+        margin-top: -30%;
+    }
+}

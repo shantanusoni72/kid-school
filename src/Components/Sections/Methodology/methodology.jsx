@@ -37,6 +37,7 @@ export default function Methodology() {
     <div className='methodology'>
       <div className="methodology-row-1">
         <div className="methodology-row-1-col-1">
+            <img src='assets/cap.svg' alt='cap' />
             <label>Active</label>
             <h1>Visual Teaching Methodology!</h1>
             <p>

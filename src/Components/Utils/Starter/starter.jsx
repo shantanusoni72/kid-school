@@ -7,7 +7,7 @@ export default function Starter(props) {
             <div className="starter-row-1-col-1">
                 {props.container_1}
             </div>
-            <div className="starter-row-1-col-2">
+            <div className={`starter-row-1-col-2 ${props.wider ? 'wide' : ''}`}>
                 <img src={props.starter_image} alt='' />
                 <h1>{props.starter}</h1>
                 <h2>{props.heading}</h2>
