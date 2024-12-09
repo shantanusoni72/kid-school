@@ -35,8 +35,9 @@
 }
 
 .planet_1 {
-    width: 80%;
+    width: 100%;
     animation: floatPlanet infinite 8s;
+    margin-left: 70%;
 }
 
 .abc_img, .pen_img {
@@ -70,8 +71,12 @@
     padding-block: 50px;
 }
 
-.program-card {
+.program-row-2 .animated {
     width: 40%;
+}
+
+.program-card {
+    width: 100%;
     display: flex;
     gap: 10px;
     background-color: var(--white);

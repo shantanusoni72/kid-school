@@ -7,10 +7,11 @@
     flex-direction: column;
     gap: 10px;
     justify-content: center;
-    align-items: end;
+    align-items: center;
 }
 
 .testimonial-item-row-1 {
+    width: 80% !important;
     display: flex;
     mask-image: url('../../../../public/assets/counter_bg_img.png');
     mask-position: center;

@@ -6,11 +6,11 @@ export default function Alarm({ data }) {
         <div className='alarm-container'>
             <div className='contact-alarm'>
                 <span className='phone'>
-                    <i class='fa fa-phone' aria-hidden='true'></i>
+                    <img src='assets/phone.svg' alt='' />
                     <a href={`tel:${data.contact.phone}`}>{data.contact.phone}</a>
                 </span>
                 <span className='email'>
-                    <i class='fa fa-envelope' aria-hidden='true'></i>
+                    <img src='assets/email.svg' alt='' />
                     <a href={`mailto:${data.contact.email}`}>{data.contact.email}</a>
                 </span>
             </div>

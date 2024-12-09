@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import 'react-multi-carousel/lib/styles.css';
 import reportWebVitals from './reportWebVitals';
+import "animate.css/animate.compat.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

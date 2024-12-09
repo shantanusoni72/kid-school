@@ -1,7 +1,25 @@
+.blog-outer {
+    width: 100%;
+    margin-block: 80px;
+}
+
+.blog-outer img.ufo {
+    width: 150px;
+    margin-inline: 45%;
+}
+
 .blog-container {
     display: flex;
     padding: 20px;
-    background-color: var(--blue);    
+    background-color: var(--blue);
+}
+
+.blog-outer img.painter {
+    width: 140px;
+    height: fit-content;
+    transform: scaleX(-1);
+    position: absolute;
+    margin-top: -5%;
 }
 
 .blog-text {
@@ -9,7 +27,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-left: 80px;
+    padding-left: 120px;
 }
 
 .blog-images {
@@ -78,32 +96,64 @@
 }
 
 .blog-images img.b1-bg {
-    width: 60%;
+    width: 80%;
 }
 
 .blog-images img.b1 {
-    width: 25%;
+    width: 36%;
     mask-image: url('../../../../public/assets/custom-shape-bg-layer1a.svg');
     mask-position: center;
     mask-size: contain;
     mask-repeat: no-repeat;
     position: absolute;
+    margin-left: -1.5%;
+    margin-top: 1.4%;
 }
 
 .blog-images img.b2 {
-    width: 40%;
+    width: 45%;
     border-radius: 100%;
     box-shadow: 10px 10px var(--white);
+    position: relative;
+    z-index: 1;
+    margin-top: -11%;
+    margin-left: 36%;
 }
 
-.blog-container-top {
-    height: 150px;
+.blog-images img.right-arrow-dashed {
+    width: 220px;
+    position: absolute;
+    right: 27.5%;
+    margin-top: 34%;
+}
+
+.blog-images img.train {
+    width: 85px;
+    margin-left: -85%;
+    position: absolute;
+    right: 42%;
+    margin-top: 35%;
+}
+
+.blog-images img.ducky {
+    width: 60px;
+    position: absolute;
+    margin-top: 26%;
+    left: 15px;
+    transform: scaleX(-1);
+}
+
+.blog-container-top.first {
+    position: relative;
+    height: 180px;
     mask-image: url('../../../../public/assets/wavebg-overlight-too-length.png');
     mask-position: top;
     mask-size: cover;
     mask-repeat: no-repeat;
     background-color: var(--blue);
     opacity: 0.1;
+    z-index: -1;
+    margin-bottom: -155px;
 }
 
 .blog-container-top.second {
@@ -115,4 +165,30 @@
     background-color: var(--blue);
     opacity: 1;
     transform: scaleX(-1);
+}
+
+.blog-container-bottom.first {
+    position: relative;
+    height: 180px;
+    mask-image: url('../../../../public/assets/wavebg-overlight-too-length.png');
+    mask-position: top;
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    background-color: var(--blue);
+    opacity: 0.1;
+    transform: scaleX(-1) scaleY(-1);
+    z-index: -1;
+}
+
+.blog-container-bottom.second {
+    position: relative;
+    height: 100px;
+    mask-image: url('../../../../public/assets/wavebg-overlight-too-length.png');
+    mask-position: top;
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    background-color: var(--blue);
+    opacity: 1;
+    transform: scaleY(-1);
+    margin-top: -14%;
 }

@@ -18,10 +18,11 @@
 
 .activity_program_item img.profile {
     width: 60%;
-    border-width: 10px;
-    border-style: solid;
     box-shadow: 0px 16px 25.92px 1.08px var(--grey-lighter);
     transition: all 0.3s ease-out;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
 }
 
 img.rainbow_img {

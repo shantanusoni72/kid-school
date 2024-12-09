@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '../../Utils/Button/button';
 import Starter from '../../Utils/Starter/starter';
 import './style.css';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 export default function Programs() {
     const program = {
@@ -68,14 +69,16 @@ export default function Programs() {
             <div className="program-row-2">
                 {
                     program.cards.map((item, index) => (
-                        <div className="program-card" key={index}>
-                            <img src={item.image} alt={item.heading} />
-                            <div className="program-card-text">
-                                <h1>{item.heading}</h1>
-                                <p>{item.paragraph}</p>
-                                <a href={item.button.url}>{item.button.text}</a>
+                        <ScrollAnimation animateIn={(index + 1) % 2 === 0 ? 'bounceInRight' : 'bounceInLeft'} animateOnce={true}>
+                            <div className="program-card" key={index}>
+                                <img src={item.image} alt={item.heading} />
+                                <div className="program-card-text">
+                                    <h1>{item.heading}</h1>
+                                    <p>{item.paragraph}</p>
+                                    <a href={item.button.url}>{item.button.text}</a>
+                                </div>
                             </div>
-                        </div>
+                        </ScrollAnimation>
                     ))
                 }
             </div>

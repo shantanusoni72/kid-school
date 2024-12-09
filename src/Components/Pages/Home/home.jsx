@@ -13,23 +13,23 @@ import Methodology from '../../Sections/Methodology/methodology';
 import Newsletter from '../../Sections/Newsletter/newsletter';
 import Testimonial from '../../Sections/Testimonial/testimonial';
 
-export default function Home() {
+export default function Home({ home_page_content }) {
   return (
     <div className='home'>
       <Hero />
-      <About />
+      {/* <About />
       <Programs />
       <Section_2 />
-      <Facilities />
+      <Facilities data={home_page_content.home_page.facilities_section} />
       <Intedu />
       <Garden />
-      <Teachers />
+      <Teachers data={home_page_content.home_page.teachers_section} />
       <div className="hc"></div>
-      <ActivityProgram />
+      <ActivityProgram data={home_page_content.home_page.activity_program_section} />
       <Blog />
       <Methodology />
-      <Testimonial />
-      <Newsletter />
+      <Testimonial data={home_page_content.home_page.testimonial_section} />
+      <Newsletter /> */}
     </div>
   )
 }

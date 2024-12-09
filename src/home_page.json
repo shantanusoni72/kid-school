@@ -1,0 +1,302 @@
+{
+    "home_page": {
+      "alarm_section": {
+        "contact": {
+          "phone": "+000 - 123 - 456789",
+          "email": "info@example.com"
+        },
+        "social": [
+          {
+            "name": "facebook",
+            "id": "fa fa-facebook",
+            "link": "#"
+          },
+          {
+            "name": "twitter",
+            "id": "fa fa-twitter",
+            "link": "#"
+          },
+          {
+            "name": "linkedin",
+            "id": "fa fa-linkedin",
+            "link": "#"
+          },
+          {
+            "name": "instagram",
+            "id": "fa fa-instagram",
+            "link": "#"
+          }
+        ]
+      },
+      "facilities_section": {
+        "banner": {
+          "starter": "School Facilities",
+          "heading": "Engaging & Spacious School Campus",
+          "paragraph": "Hise sed augue vitae felis pellentesque varius nec quis nunc. Morbi mauris augue, pulvinar quis luctus eget. Phasellus gravida lacus quis eros lobortis, nec dapibus quam gravida."
+        },
+        "cards": [
+          {
+            "image": "assets/f1.jpg",
+            "heading": "Class Room",
+            "paragraph": "Purus sit amet luctus venenatis lectus magna fringilla urna. Scelerisque viverra mauris in aliquam sem fringilla ut ac.",
+            "button": {
+              "text": "View More",
+              "link": "/"
+            },
+            "side_image": "assets/book.svg"
+          },
+          {
+            "image": "assets/f2.jpg",
+            "heading": "Transport",
+            "paragraph": "Tristique risus nec feugiat in. Auctor augue mauris augue neque gravida in fermentum et sollic set itudin.",
+            "button": {
+              "text": "View More",
+              "link": "/"
+            },
+            "side_image": "assets/bus.svg"
+          },
+          {
+            "image": "assets/f3.jpg",
+            "heading": "Play Area",
+            "paragraph": "Diam donec adipiscing tristique risus nec feugiat in fermentum posuere. Ultrices eros in cursus turpis massa tincidunt dui.",
+            "button": {
+              "text": "View More",
+              "link": "/"
+            },
+            "side_image": "assets/play_toy.svg"
+          },
+          {
+            "image": "assets/f4.jpg",
+            "heading": "Healthy Foods",
+            "paragraph": "Integer enim neque volutpat ac tincidunt vitae semper. Eget duis at tellus at urna condimentum mattis pellentesque id.",
+            "button": {
+              "text": "View More",
+              "link": "/"
+            },
+            "side_image": "assets/book.svg"
+          }
+        ]
+      },
+      "activity_program_section": {
+        "responsive": {
+          "desktop": {
+            "breakpoint": { "max": 3000, "min": 1024 },
+            "items": 3
+          },
+          "tablet": {
+            "breakpoint": { "max": 1024, "min": 464 },
+            "items": 1
+          },
+          "mobile": {
+            "breakpoint": { "max": 464, "min": 0 },
+            "items": 1
+          }
+        },
+        "banner": {
+          "starter": "Activity Programs",
+          "heading": "Smart Activities",
+          "paragraph": "Forbi mauris augue, pulvinar quis luctus eget. Phasellus gravida lacus quis eros lobortis, nec dapibus quam gravida. Duis sed augue vitae felis pellentesque varius nec quis nunc."
+        },
+        "cards": [
+          {
+            "design": {
+              "head": "assets/school.svg",
+              "shape": "",
+              "border_radius": "10px",
+              "color": "#61BFC9"
+            },
+            "image": "assets/imbox1.jpg",
+            "heading": "Team Activities",
+            "paragraph": "Blandit volutpat maecenas volutpat blandit aliquam etiam. Placerat duis ultricies lacus sed consectetur adipiscing elit."
+          },
+          {
+            "design": {
+              "head": "assets/two_kids.svg",
+              "border_radius": "100%",
+              "shape": "",
+              "color": "#FCCB13"
+            },
+            "image": "assets/imbox2.jpg",
+            "heading": "Invidual Activity",
+            "paragraph": "Vivamus at augue eget arcu dictum varius. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce."
+          },
+          {
+            "design": {
+              "head": "assets/dot_ball.svg",
+              "border_radius": "",
+              "shape": "assets/hex.png",
+              "color": "#F7941E"
+            },
+            "image": "assets/imbox3.jpg",
+            "heading": "Craft",
+            "paragraph": "Aliquam congue id velit sit amet vehicula. Donec quis pretium orci. Mauris posuere sem nec ex laoreet suscipit Fusce."
+          },
+          {
+            "design": {
+              "head": "assets/dot_ball.svg",
+              "border_radius": "",
+              "shape": "assets/rec-mask.png",
+              "color": "#AD5FF3"
+            },
+            "image": "assets/imbox4.jpg",
+            "heading": "Painting",
+            "paragraph": "Aliquam congue id velit sit amet vehicula. Donec quis pretium orci. Mauris posuere sem nec ex laoreet suscipit Fusce."
+          },
+          {
+            "design": {
+              "head": "assets/school.svg",
+              "border_radius": "10px",
+              "shape": "assets/sp.png",
+              "color": "#61BFC9"
+            },
+            "image": "assets/imbox1.jpg",
+            "heading": "Team Activities",
+            "paragraph": "Blandit volutpat maecenas volutpat blandit aliquam etiam. Placerat duis ultricies lacus sed consectetur adipiscing elit."
+          },
+          {
+            "design": {
+              "head": "assets/two_kids.svg",
+              "border_radius": "100%",
+              "shape": "assets/hex.png",
+              "color": "#FCCB13"
+            },
+            "image": "assets/imbox2.jpg",
+            "heading": "Invidual Activity",
+            "paragraph": "Vivamus at augue eget arcu dictum varius. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce."
+          },
+          {
+            "design": {
+              "head": "assets/dot_ball.svg",
+              "border_radius": "",
+              "shape": "assets/hex.png",
+              "color": "#F7941E"
+            },
+            "image": "assets/imbox3.jpg",
+            "heading": "Craft",
+            "paragraph": "Aliquam congue id velit sit amet vehicula. Donec quis pretium orci. Mauris posuere sem nec ex laoreet suscipit Fusce."
+          }
+        ]
+      },
+      "teachers_section": {
+        "responsive": {
+          "desktop": {
+            "breakpoint": { "max": 3000, "min": 1024 },
+            "items": 3
+          },
+          "tablet": {
+            "breakpoint": { "max": 1024, "min": 464 },
+            "items": 3
+          },
+          "mobile": {
+            "breakpoint": { "max": 464, "min": 0 },
+            "items": 1
+          }
+        },
+        "banner": {
+          "starter": "Meet Our Professional",
+          "heading": "Teachers & Trainers",
+          "paragraph": "Chasellus gravida lacus quis eros lobortis, nec dapibus quam gravida. Duis sed augue vitae felis pellentesque varius nec quis nunc. Morbi mauris augue, pulvinar quis luctus eget."
+        },
+        "cards": [
+          {
+            "image": "assets/Team_image_1.jpg",
+            "name": "Sarah Michelle",
+            "paragraph": "Sit amet nisl suscipit adipiscing bibendum est. Aliquam ultrices sagittis orci a scelerisque purus.",
+            "social": [
+              { "name": "facebook", "id": "fa fa-facebook", "link": "/" },
+              { "name": "twitter", "id": "fa fa-twitter", "link": "/" },
+              { "name": "linkedin", "id": "fa fa-linkedin", "link": "/" }
+            ]
+          },
+          {
+            "image": "assets/Team_image_2.jpg",
+            "name": "Mary Grace",
+            "paragraph": "Bibendum ut tristique et egestas quis ipsum suspendisse. Euismod quis viverra nibh cras pulvinar mattis nunc.",
+            "social": [
+              { "name": "facebook", "id": "fa fa-facebook", "link": "/" },
+              { "name": "twitter", "id": "fa fa-twitter", "link": "/" },
+              { "name": "linkedin", "id": "fa fa-linkedin", "link": "/" }
+            ]
+          },
+          {
+            "image": "assets/Team_image_3.jpg",
+            "name": "Emma Grace",
+            "paragraph": "Vellentesque tristique tincidunt massa in faucibus. Sed est erat, pharetra id tortor ut, lacinia molestie ligula.",
+            "social": [
+              { "name": "facebook", "id": "fa fa-facebook", "link": "/" },
+              { "name": "twitter", "id": "fa fa-twitter", "link": "/" },
+              { "name": "linkedin", "id": "fa fa-linkedin", "link": "/" }
+            ]
+          },
+          {
+            "image": "assets/Team_image_4.jpg",
+            "name": "Bellie Beth",
+            "paragraph": "Ballentesque tristique tincidunt massa in faucibus. Sed est erat, pharetra id tortor ut, lacinia molestie ligula.",
+            "social": [
+              { "name": "facebook", "id": "fa fa-facebook", "link": "/" },
+              { "name": "twitter", "id": "fa fa-twitter", "link": "/" },
+              { "name": "linkedin", "id": "fa fa-linkedin", "link": "/" }
+            ]
+          },
+          {
+            "image": "assets/Team_image_5.jpg",
+            "name": "Anna Lane",
+            "paragraph": "Kollentesque tristique tincidunt massa in faucibus. Sed est erat, pharetra id tortor ut, lacinia molestie ligula.",
+            "social": [
+              { "name": "facebook", "id": "fa fa-facebook", "link": "/" },
+              { "name": "twitter", "id": "fa fa-twitter", "link": "/" },
+              { "name": "linkedin", "id": "fa fa-linkedin", "link": "/" }
+            ]
+          },
+          {
+            "image": "assets/Team_image_6.jpg",
+            "name": "Emma Grace",
+            "paragraph": "Jillentesque tristique tincidunt massa in faucibus. Sed est erat, pharetra id tortor ut, lacinia molestie ligula.",
+            "social": [
+              { "name": "facebook", "id": "fa fa-facebook", "link": "/" },
+              { "name": "twitter", "id": "fa fa-twitter", "link": "/" },
+              { "name": "linkedin", "id": "fa fa-linkedin", "link": "/" }
+            ]
+          }
+        ]
+      },
+      "testimonial_section": {
+        "responsive": {
+          "desktop": { "breakpoint": { "max": 3000, "min": 1024 }, "items": 1 },
+          "tablet": { "breakpoint": { "max": 1024, "min": 464 }, "items": 1 },
+          "mobile": { "breakpoint": { "max": 464, "min": 0 }, "items": 1 }
+        },
+        "banner": {
+          "starter": "Happy Parents",
+          "heading": "Our Testimonials",
+          "paragraph": "Quasellus gravida lacus quis eros lobortis, nec dapibus quam gravida. Duis sed augue vitae felis pellentesque varius nec quis nunc. Morbi mauris augue, pulvinar quis luctus eget."
+        },
+        "cards": [
+          {
+            "rating": 5,
+            "review": "Quisque egestas ipsum vitae erat faucibus, non volutpat arcu faucibus. Phasellus auctor sed ligula in bibendum. Maecenas vel ultrices nulla. Aliquam nunc nulla, consectetur quis varius eget, tempor a nisi. Integer hendrerit viverra enim, in mattis purus fermentum et. Quisque sit amet enim a arcu euismod dapibus eget sit amet est.",
+            "author": { "name": "Noah Emma", "position": "Business Head" },
+            "image": "assets/t1.jpg"
+          },
+          {
+            "rating": 5,
+            "review": "Phasellus auctor sed ligula in bibendum. Maecenas vel ultrices nulla. Aliquam nunc nulla, consectetur quis varius eget, tempor a nisi. Integer hendrerit viverra enim, in mattis purus fermentum et. Quisque sit amet enim a arcu euismod dapibus eget sit amet est. Quisque egestas ipsum vitae erat faucibus, non volutpat arcu faucibus.",
+            "author": { "name": "Merlin", "position": "Designer" },
+            "image": "assets/t2.jpg"
+          },
+          {
+            "rating": 5,
+            "review": "Maecenas vel ultrices nulla. Aliquam nunc nulla, consectetur quis varius eget, tempor a nisi. Integer hendrerit viverra enim, in mattis purus fermentum et. Quisque sit amet enim a arcu euismod dapibus eget sit amet est. Quisque egestas ipsum vitae erat faucibus, non volutpat arcu faucibus. Phasellus auctor sed ligula in bibendum.",
+            "author": { "name": "Anderia", "position": "Lawyer" },
+            "image": "assets/t3.jpg"
+          },
+          {
+            "rating": 5,
+            "review": "Ruisque egestas ipsum vitae erat faucibus, non volutpat arcu faucibus. Phasellus auctor sed ligula in bibendum. Maecenas vel ultrices nulla. Aliquam nunc nulla, consectetur quis varius eget, tempor a nisi. Integer hendrerit viverra enim, in mattis purus fermentum et. Quisque sit amet enim a arcu euismod dapibus eget sit amet est.",
+            "author": { "name": "Fransis", "position": "Architect" },
+            "image": "assets/t4.jpg"
+          }
+        ]
+      }
+    }
+  }  

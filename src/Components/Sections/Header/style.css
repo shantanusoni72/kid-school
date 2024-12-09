@@ -20,6 +20,44 @@
     list-style: none;
 }
 
+.header-menu-anchor.selected a {
+    color: var(--gold);
+}
+
+.header-menu-anchor.selected a::before {
+    content: "";
+    position: absolute;
+    background-image: url('../../../../public/assets/canyon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.header-menu-anchor.selected a span {
+    padding-left: 24px;
+}
+
+/* .header-menu-anchor:hover a {
+    color: var(--gold);
+}
+
+.header-menu-anchor:hover a::before {
+    content: "";
+    position: absolute;
+    background-image: url('../../../../public/assets/canyon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.header-menu-anchor:hover a span {
+    padding-left: 24px;
+} */
+
 .header-menu li img.show {
     display: inline-flex;
 }
@@ -42,11 +80,103 @@
 
 .header-end {
     display: flex;
+    align-items: center;
     gap: 20px;
+}
+
+.fa-bars {
+    display: none;
 }
 
 .header-end a {
     font-size: calc(var(--h4) + 5px);
     text-decoration: none;
     color: var(--black);
+}
+
+.fa-search:hover, .fa-shopping-cart:hover {
+    color: var(--gold);
+}
+
+@keyframes openMobileMenu {
+    0% {
+        transform: translateX(300px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes closeMobileMenu {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(300);
+    }
+}
+
+.mobile-menu {
+    width: 20%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: 0px;
+    background-color: var(--white);
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    animation: openMobileMenu 0.4s;
+
+}
+
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.mobile-menu ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid rgb(231, 231, 231);
+    border-bottom: 1px solid rgb(231, 231, 231);   
+}
+
+.mobile-menu ul li a {
+    font-size: var(--h4);
+    color: var(--black);
+    text-decoration: none;
+}
+
+.close {
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+}
+
+.mobile-menu:active:has(> .close) {
+    border: 1px solid red;
+    animation: closeMobileMenu 0.4s;
+}
+
+.mobile-menu ul li.selected {
+    background-color: var(--pink);
+}
+
+.mobile-menu ul li.selected a, .mobile-menu ul li.selected i {
+    color: var(--white);
+}
+
+@media screen and (max-width: 1280px) {
+    .header-menu {
+        display: none;
+    }
+
+    .fa-bars {
+        display: block;
+    }
 }

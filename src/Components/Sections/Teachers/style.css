@@ -4,16 +4,16 @@
 
 .teacher_carousel ul {
     justify-content: center !important;
-    gap: 90px;
+    gap: 80px;
 }
 
 .teacher_item {
-    width: 300px !important;
+    width: 280px !important;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     padding-block: 40px;
 }
 
