@@ -35,6 +35,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 .hc {
     width: 55%;
     height: 10px;

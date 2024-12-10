@@ -20,6 +20,21 @@
     list-style: none;
 }
 
+.header-menu-anchor {
+    position: relative;
+}
+
+.header-menu-anchor a {
+    display: inline-flex;
+    align-items: center;
+    color: inherit;
+}
+
+.header-menu-anchor a span {
+    display: inline-block;
+    padding-left: 24px;
+}
+
 .header-menu-anchor.selected a {
     color: var(--gold);
 }
@@ -27,6 +42,9 @@
 .header-menu-anchor.selected a::before {
     content: "";
     position: absolute;
+    left: 0;
+    top: 50%; 
+    transform: translateY(-50%); 
     background-image: url('../../../../public/assets/canyon.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -35,28 +53,41 @@
     height: 24px;
 }
 
-.header-menu-anchor.selected a span {
-    padding-left: 24px;
+.header-menu-anchor:hover a {
+    color: var(--gold);
 }
 
-/* .header-menu-anchor:hover a {
-    color: var(--gold);
+@keyframes candleRising {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 .header-menu-anchor:hover a::before {
     content: "";
     position: absolute;
+    left: 0; 
+    top: 50%;
+    transform: translateY(-50%);
     background-image: url('../../../../public/assets/canyon.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     width: 24px;
     height: 24px;
+    animation: candleRising 0.3s linear;
 }
 
-.header-menu-anchor:hover a span {
-    padding-left: 24px;
-} */
+
+
+
+
+
 
 .header-menu li img.show {
     display: inline-flex;
@@ -81,7 +112,7 @@
 .header-end {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 .fa-bars {
@@ -98,6 +129,10 @@
     color: var(--gold);
 }
 
+.header-end i span {
+    padding-inline: 10px;
+}
+
 @keyframes openMobileMenu {
     0% {
         transform: translateX(300px);
@@ -112,7 +147,7 @@
         transform: translateX(0px);
     }
     100% {
-        transform: translateX(300);
+        transform: translateX(300px);
     }
 }
 
@@ -128,6 +163,7 @@
     display: flex;
     flex-direction: column;
     animation: openMobileMenu 0.4s;
+    display: none;
 
 }
 
@@ -158,10 +194,10 @@
     padding: 20px;
 }
 
-.mobile-menu:active:has(> .close) {
+/* .mobile-menu:active:has(> .close) {
     border: 1px solid red;
     animation: closeMobileMenu 0.4s;
-}
+} */
 
 .mobile-menu ul li.selected {
     background-color: var(--pink);

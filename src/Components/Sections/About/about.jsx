@@ -13,7 +13,7 @@ export default function About() {
         </div>
         <div className="about-text">
           <div className="about-row-2-text">
-            <img src='assets/cap.svg' alt='cap' />
+            {/* <img src='assets/cap.svg' alt='cap' /> */}
             <label>About Us</label>
             <h2>We Educate Knowledge & Essential Skills!</h2>
             <p>

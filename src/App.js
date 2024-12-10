@@ -10,8 +10,8 @@ function App() {
     <div className='App'>
       <Alarm data={home_page_content.home_page.alarm_section} />
       <Header />
-      {/* <Home home_page_content={home_page_content} /> */}
-      {/* <Footer /> */}
+      <Home home_page_content={home_page_content} />
+      <Footer />
     </div>
   );
 }

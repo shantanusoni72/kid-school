@@ -17,7 +17,7 @@ export default function Home({ home_page_content }) {
   return (
     <div className='home'>
       <Hero />
-      {/* <About />
+      <About />
       <Programs />
       <Section_2 />
       <Facilities data={home_page_content.home_page.facilities_section} />
@@ -29,7 +29,7 @@ export default function Home({ home_page_content }) {
       <Blog />
       <Methodology />
       <Testimonial data={home_page_content.home_page.testimonial_section} />
-      <Newsletter /> */}
+      <Newsletter />
     </div>
   )
 }

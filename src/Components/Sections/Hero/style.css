@@ -58,23 +58,20 @@
     width: 100%;
 }
 
-.hero .carousel-item {
-    height: 800px;
-}
-
 .hero .react-multiple-carousel__arrow--left {
-    width: 120px;
-    min-height: 60px;
     background-color: transparent;
     background-image: url('../../../../public/assets/left-rocket.svg') !important;
-    background-size: cover !important;
+    background-size: 80% !important;
     background-repeat: no-repeat !important;
     transform-origin: center;
     animation: 3s ease-in-out 0s infinite alternate both rockshake;
+    margin-left: 2%;
+    margin-top: 4%;
 }
 
 .hero .react-multiple-carousel__arrow--left:hover {
     background-color: transparent;
+    animation: none;
 }
 
 .hero .react-multiple-carousel__arrow--left::before {
@@ -82,18 +79,18 @@
 }
 
 .hero .react-multiple-carousel__arrow--right {
-    width: 120px;
-    min-height: 60px;
     background-color: transparent;
     background-image: url('../../../../public/assets/right-rocket.svg') !important;
-    background-size: cover !important;
+    background-size: 80% !important;
     background-repeat: no-repeat !important;
     transform-origin: center;
     animation: 3s ease-in-out 0s infinite alternate both rockshake;
+    margin-top: 4%;
 }
 
 .hero .react-multiple-carousel__arrow--right:hover {
     background-color: transparent;
+    animation: none;
 }
 
 .hero .react-multiple-carousel__arrow--right::before {
@@ -109,10 +106,8 @@
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 133%;
-}
-
-.carousel-item {
     color: var(--white);
+    height: 800px;
 }
 
 .carousel-item h1 {
@@ -137,21 +132,19 @@
     border-radius: 30px;
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    transform: skew(0deg);
     position: relative;
-    z-index: 1;
+    z-index: 1;    
 }
 
 .carousel-item a:hover {
     background-color: var(--white);
     color: var(--blue-light);
-    transform: skew(30deg);
 }
 
 .heading.xl {
     text-align: center;
     line-height: 1.2em;
-    width: 50%;
+    width: 45%;
     font-size: 100px;
     animation: 0.3s ease-in-out 0s infinite alternate both textFickle;
 }
@@ -190,14 +183,42 @@
 
 @media screen and (max-width: 1024px) {
     .carousel-item {
+        height: 920px;
         gap: 20px;
+        background-size: 168%;
     }
 
-    .carousel-item h1 {
-        font-size: 100px;
+    .heading.xl {
+        width: 80%;
+        font-size: 70px;
     }
 
     .cloud-banner.orange {
-        margin-top: -265px;
+        margin-top: -225px;
+    }
+    
+    .cloud-banner.white {
+        margin-top: -7.3%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .carousel-item {
+        height: 750px;
+        gap: 20px;
+        background-size: 210%;
+    }
+
+    .heading.xl {
+        width: 80%;
+        font-size: 70px;
+    }
+
+    .cloud-banner.orange {
+        margin-top: -99px
+    }
+    
+    .cloud-banner.white {
+        margin-top: -12.3%;
     }
 }

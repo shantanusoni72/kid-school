@@ -33,7 +33,7 @@ export default function Header() {
                 </ul>
             </div>
             <div className='header-end'>
-                <i onClick={() => document.querySelector('.mobile-menu').style.display = 'flex'} class="fa fa-bars" aria-hidden="true">Menu</i>
+                <i onClick={() => document.querySelector('.mobile-menu').style.display = 'flex'} class="fa fa-bars" aria-hidden="true"><span>Menu</span></i>
                 <a href='/'>
                     <i class='fa fa-search' aria-hidden='true'></i>
                 </a>
@@ -43,8 +43,8 @@ export default function Header() {
             </div>
         </div>
         <div className="mobile-menu">
-            <div  className="close">
-                <i class="fa fa-times" aria-hidden="true"></i>
+            <div className="close">
+                <i onClick={() => document.querySelector('.mobile-menu').style.display = 'none'} class="fa fa-times" aria-hidden="true"></i>
             </div>
             <ul>
                 <li onClick={() => setMenuItemOnMobile(1)} className={`${getMenuItemOnMobile === 1 ? 'selected': ''}`}><a>Home</a><i class="fa fa-angle-right" aria-hidden="true"></i></li>
