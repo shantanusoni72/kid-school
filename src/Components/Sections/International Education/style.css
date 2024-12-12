@@ -65,7 +65,7 @@
 
 .rotating_img {
     width: 200px;
-    animation: rotate_wheel infinite 3s;
+    animation: rotate_wheel infinite linear 9s;
 }
 
 .house_img {

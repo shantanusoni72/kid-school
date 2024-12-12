@@ -28,7 +28,7 @@
     width: 80%;
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     background-color: transparent;
 }
 
@@ -51,6 +51,7 @@
     display: flex;
     flex-direction: column;
     height: auto;
+    gap: 0px;
 }
 
 .starMourning {
@@ -59,9 +60,21 @@
 
 .about-image img.mask {
     position: absolute;
-    width: 30%;
-    margin-top: 6%;
+    width: 80%;
+    margin-top: -1%;
     animation: shadow_dancing infinite 15s;
+}
+
+.about-image::before {
+    position: absolute;
+    content: "";
+    background-image: url('../../../../public/assets/star.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    margin-top: -13%;
 }
 
 .baby_img {
@@ -74,7 +87,7 @@
 
 .about-text {
     display: flex;
-    align-items: center;
+    align-items: end;
     gap: 10px;
 }
 
@@ -82,7 +95,7 @@
     display: flex;
     align-items: start;
     flex-direction: column;
-    gap: 20px;
+    gap: 5px;
 }
 
 .about-row-2-text label::before {
@@ -112,8 +125,11 @@
 }
 
 .about-row-2-text p {
+    padding-block: 10px;
+    padding-bottom: 25px;
     font-size: var(--h4);
     color: var(--grey);
+    line-height: 26px;
 }
 
 .about-row-2-image {
@@ -132,12 +148,13 @@
 }
 
 .about-row-2-image img.curl {
-    width: 100px;
+    width: 75px;
     transform: rotate(-25deg);
 }
 
 .line {
-    width: 50%;
+    width: 65%;
+    transform: scaleY(-1);
 }
 
 @media screen and (max-width: 1024px) {

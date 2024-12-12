@@ -24,7 +24,7 @@ export default function Newsletter() {
                     </div>
                 }
             />
-            <BigInput />
+            {/* <BigInput /> */}
         </div>
     )
 }

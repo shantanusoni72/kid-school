@@ -2,13 +2,25 @@
     padding-block: 50px;
 }
 
+.teacher-carousel-outer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.teacher_carousel {
+    width: 78%;
+    position: unset !important;
+}
+
 .teacher_carousel ul {
     justify-content: center !important;
-    gap: 80px;
+    gap: 90px;
 }
 
 .teacher_item {
-    width: 280px !important;
+    width: 265px !important;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -23,11 +35,64 @@
     mask-position: center;
     mask-repeat: no-repeat;
     mask-size: contain;
+    cursor: pointer;
 }
 
-.teacher_item h1 {
+@keyframes pinkStoneRising {
+    from {
+        top: 20%;
+        opacity: 0;
+    }
+}
+
+.teacher_item:hover::before {
+    position: absolute;
+    content: "";
+    mask-image: url('../../../../public/assets/teacher-backyard.svg');
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    background-color: var(--pink);
+    width: 270px;
+    height: 270px;
+    z-index: -1;
+    transform: scaleX(-1) scaleY(-1) rotate(5deg);
+    transform-origin: center;
+    top: 4%;
+    transition: 0.4s;
+    opacity: 1;
+    animation: pinkStoneRising 1s;
+}
+
+.teacher_item:hover::after {
+    position: absolute;
+    content: "";
+    mask-image: url('../../../../public/assets/teacher-backyard.svg');
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    background-color: var(--pink);
+    width: 270px;
+    height: 270px;
+    z-index: -1;
+    transform: scaleX(-1) scaleY(-1) rotate(5deg);
+    transform-origin: center;
+    top: 43%;
+    transition: 0.4s;
+    opacity: 0.03;
+    animation: pinkStoneRising 1s;
+}
+
+.teacher_item h1 a {
     font-size: var(--h2);
+    background-color: transparent;
     color: var(--blue-light);
+    text-decoration: none;
+}
+
+.teacher_item:hover h1 a {
+    color: var(--pink);
+    transition: 0.4s;
 }
 
 .teacher_item p {
@@ -49,18 +114,27 @@
     border-radius: 55% 45% 62% 38% / 42% 40% 60% 58%;
 }
 
+.teacher_item a:hover {
+    border-radius: 38% 62% 45% 55% / 58% 60% 40% 42%;
+    transition: 0.8s;
+}
+
 .react-multiple-carousel__arrow {
-    min-width: 170px !important;
-    min-height: 70px !important;
+    min-width: 120px !important;
+    min-height: 40px !important;
 }
 
 .teacher_carousel .react-multiple-carousel__arrow--left {
     background-image: url('../../../../public/assets/spider-left.svg') !important;
     background-repeat: no-repeat !important;
-    background-size: cover !important;
+    background-size: 90% !important;
     background-color: transparent;
     transform-origin: center;
     animation: 3s ease-in-out 0s infinite alternate both rockshake;
+    position: absolute;
+    left: 6%;
+    top: 35%;
+    /* z-index: -1; */
 }
 
 .teacher_carousel .react-multiple-carousel__arrow--left:hover {
@@ -74,10 +148,15 @@
 .teacher_carousel .react-multiple-carousel__arrow--right {
     background-image: url('../../../../public/assets/spider-right.svg') !important;
     background-repeat: no-repeat !important;
-    background-size: cover !important;
+    background-size: 90% !important;
+    background-position: right;
     background-color: transparent;
     transform-origin: center;
     animation: 3s ease-in-out 0s infinite alternate both rockshake;
+    position: absolute;
+    right: 6%;
+    top: 35%;
+    /* z-index: -1; */
 }
 
 .teacher_carousel .react-multiple-carousel__arrow--right:hover {

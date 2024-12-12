@@ -16,12 +16,24 @@
     }
 }
 
+@keyframes horseJumping {
+    0% {
+        transform: translateY(-4px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(4px);
+    }
+}
+
 .section_2 {
     display: flex;
     justify-content: space-around;
     align-items: end;
     gap: 20px;
-    padding-block: 80px;
+    padding-block: 120px;
 }
 
 .section_2_text {
@@ -42,16 +54,32 @@
     gap: 20px;
 }
 
-.section_2_text label img.cap {
-    width: 50px;
-    opacity: 0.3;
+.section_2_text span::before {
     position: absolute;
-    margin-top: -10%;
+    content: "";
+    background-image: url('../../../../public/assets/cap.svg');
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 45px;
+    height: 45px;
+    opacity: 0.3;
+    margin-top: -13%;
+    margin-left: -4%;
 }
 
-.section_2_text label img.horse {
+.section_2_text span::after {
+    position: absolute;
+    content: "";
+    background-image: url('../../../../public/assets/horse.svg');
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
     width: 100px;
-    animation: rockUpDown infinite 4s;
+    height: 100px;
+    margin-top: -28%;
+    margin-left: 30%;
+    animation: horseJumping infinite 4s;
 }
 
 .section_2_text h2 {

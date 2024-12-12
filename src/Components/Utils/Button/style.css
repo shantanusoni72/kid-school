@@ -3,26 +3,32 @@
 .button a {
     padding: 0.9em 2em;
     font-size: calc(var(--h4) + 2px);
-    background-color: var(--pink);
+    background-color: var(--blue-light);
     color: var(--white);
     border: 0px;
     border-radius: 30px;
     text-decoration: none;
 }
 
-.button a:hover {
-    background-color: var(--white);
-    color: var(--blue-light);
-}
+/* .button a::before {
+    position: absolute;
+    content: "";
+    background-color: var(--pink);
+    color: var(--white);
+    transform: skew(30deg);
+    width: 10%;
+    height: 50px;
+    width: 14%;
+    height: 70px;
+    margin-top: -2%;
+    margin-left: -4%;
+    z-index: -1;
+} */
+
 
 .button.small a {
     padding: 0.5em 2em;
     font-size: calc(var(--h4) + 2px);
-    background-color: var(--pink);
-    color: var(--white);
-    border: 0px;
-    border-radius: 30px;
-    text-decoration: none;
 }
 
 .button.big_long a {

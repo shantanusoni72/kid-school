@@ -1,10 +1,16 @@
 .alarm-container {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding-inline: 135px;
-    padding-block: 10px;
+    justify-content: center;
     background-color: var(--red);
     color: var(--white);
+    padding-block: 8px;
+}
+
+.alarm {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
     font-size: var(--h4);
 }
 
@@ -13,7 +19,6 @@
     justify-content: space-between;
     align-items: center;
     gap: 8px;
-    padding-right: 28px;
 }
 
 .contact-alarm {
@@ -61,8 +66,8 @@
 .social-alarm span i {
     background-color: var(--white);
     color: var(--red);
-    padding-block: 4px;
-    padding-inline: 7px;
+    padding-block: 5.9px;
+    padding-inline: 9px;
     border-radius: 100%;
     cursor: pointer;
 }

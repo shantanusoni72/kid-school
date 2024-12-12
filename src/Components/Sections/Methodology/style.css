@@ -46,6 +46,43 @@
     border-bottom-right-radius: 50%;
 }
 
+.pause {
+    position: absolute;
+    content: "";
+    mask-image: url('../../../../public/assets/pause.svg');
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    margin-top: -16%;
+    right: 34%;
+    z-index: 4;
+    cursor: pointer;
+}
+
+@keyframes wavesBtn {
+    to {
+        transform: scale(1.4);
+        opacity: 0;
+    }
+}
+
+.methodology-row-1-col-2::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    transform: scale(1);
+    opacity: 0.5;
+    border-radius: 100%;
+    margin-top: 8.4%;
+    right: 34%;
+    animation: wavesBtn infinite 1.5s;
+}
+
 .methodology-row-2 {
     display: flex;
     justify-content: center;

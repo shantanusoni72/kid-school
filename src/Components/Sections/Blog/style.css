@@ -1,6 +1,37 @@
-.blog-outer {
+.blog-outer::before {
     width: 100%;
     margin-block: 80px;
+    position: absolute;
+    content: "";
+    mask-image: url('../../../../public/assets/wavebg-overlight-too-length.png');
+    mask-position: top;
+    mask-repeat: repeat-x;
+    mask-size: 100%;
+    width: 100%;
+    height: 190px;
+    margin-top: -4.5%;
+    left: 0%;
+    opacity: 0.2;
+    transform: scaleX(1);
+    background-color: var(--blue);
+}
+
+.blog-outer::after {
+    width: 100%;
+    margin-block: 80px;
+    position: absolute;
+    content: "";
+    mask-image: url('../../../../public/assets/wavebg-overlight-too-length.png');
+    mask-position: top;
+    mask-repeat: repeat-x;
+    mask-size: 100%;
+    width: 100%;
+    height: 190px;
+    margin-top: -0.5%;
+    left: 0%;
+    opacity: 0.2;
+    transform: scaleX(1) scale(-1);
+    background-color: var(--blue);
 }
 
 .blog-outer img.ufo {
@@ -9,25 +40,63 @@
 }
 
 .blog-container {
+    height: 600px;
     display: flex;
     padding: 20px;
     background-color: var(--blue);
+}
+
+.blog-container::before {
+    position: absolute;
+    content: "";
+    background-image: url('../../../../public/assets/wavebg-overlight-too-length.png');
+    background-position: top;
+    background-repeat: repeat-x;
+    background-size: 100%;
+    width: 100%;
+    height: 190px;
+    margin-top: -15.5%;
+    left: 0%;
+    transform: scaleX(-1);
+}
+
+.blog-container::after {
+    position: absolute;
+    content: "";
+    background-image: url('../../../../public/assets/wavebg-overlight-too-length.png');
+    background-position: top;
+    background-repeat: repeat-x;
+    background-size: 100%;
+    width: 100%;
+    height: 190px;
+    margin-top: 42.5%;
+    left: 0%;
+    transform: scaleX(1) scaleY(-1);
 }
 
 .blog-outer img.painter {
     width: 140px;
     height: fit-content;
     transform: scaleX(-1);
+    z-index: 1;
     position: absolute;
-    margin-top: -5%;
+    margin-top: -9%;
+}
+
+.blog-text-outer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: initial;
+    margin-top: -3.5%;
+    z-index: 1;
 }
 
 .blog-text {
-    width: 50%;
+    width: 67%;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-left: 120px;
 }
 
 .blog-images {
@@ -93,6 +162,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: -5.5%;
+    position: initial;
+    z-index: 1;
 }
 
 .blog-images img.b1-bg {
@@ -145,7 +217,7 @@
 
 .blog-container-top.first {
     position: relative;
-    height: 180px;
+    height: 200px;
     mask-image: url('../../../../public/assets/wavebg-overlight-too-length.png');
     mask-position: top;
     mask-size: cover;
@@ -153,11 +225,11 @@
     background-color: var(--blue);
     opacity: 0.1;
     z-index: -1;
-    margin-bottom: -155px;
+    margin-bottom: -180px;
 }
 
 .blog-container-top.second {
-    height: 150px;
+    height: 180px;
     mask-image: url('../../../../public/assets/wavebg-overlight-too-length.png');
     mask-position: top;
     mask-size: cover;
@@ -182,7 +254,7 @@
 
 .blog-container-bottom.second {
     position: relative;
-    height: 100px;
+    height: 190px;
     mask-image: url('../../../../public/assets/wavebg-overlight-too-length.png');
     mask-position: top;
     mask-size: cover;

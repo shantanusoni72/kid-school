@@ -28,6 +28,55 @@
           }
         ]
       },
+      "program_section": {
+        "text": {
+            "starter": "Educational Programs",
+            "heading": "Step By Step Systematic Education",
+            "paragraph": "Duis sed augue vitae felis pellentesque varius nec quis nunc. Morbi mauris augue, pulvinar quis luctus eget. Phasellus gravida lacus quis eros lobortis, nec dapibus quam gravida."
+        },
+        "cards": [
+            {
+                "image": "assets/program-1.jpg",
+                "heading": "Online Class",
+                "paragraph": "Eu turpis egestas pretium aenean pharetra magna ac.",
+                "button": {
+                    "text": "Learn More",
+                    "url": "/"
+                },
+                "side_image": "assets/rising_sun.svg"
+            },
+            {
+                "image": "assets/program-2.jpg",
+                "heading": "Formal Tuition",
+                "paragraph": "Posuere ac ut consequat semper viverra nam libero justo.",
+                "button": {
+                    "text": "Learn More",
+                    "url": "/"
+                },
+                "side_image": "assets/shine.svg"
+            },
+            {
+                "image": "assets/program-3.jpg",
+                "heading": "Special Tuition",
+                "paragraph": "Tristique risus nec feugiat in. Auctor augue mauri.",
+                "button": {
+                    "text": "Learn More",
+                    "url": "/"
+                },
+                "side_image": "assets/atom.svg"
+            },
+            {
+                "image": "assets/program-4.jpg",
+                "heading": "Preschool",
+                "paragraph": "Adipiscing diam donec adipiscing tristique risus entum.",
+                "button": {
+                    "text": "Learn More",
+                    "url": "/"
+                },
+                "side_image": "assets/firecrack.svg"
+            }
+        ]
+    },
       "facilities_section": {
         "banner": {
           "starter": "School Facilities",
@@ -101,7 +150,6 @@
           {
             "design": {
               "head": "assets/school.svg",
-              "shape": "",
               "border_radius": "10px",
               "color": "#61BFC9"
             },
@@ -113,7 +161,6 @@
             "design": {
               "head": "assets/two_kids.svg",
               "border_radius": "100%",
-              "shape": "",
               "color": "#FCCB13"
             },
             "image": "assets/imbox2.jpg",
@@ -123,7 +170,6 @@
           {
             "design": {
               "head": "assets/dot_ball.svg",
-              "border_radius": "",
               "shape": "assets/hex.png",
               "color": "#F7941E"
             },
@@ -134,7 +180,6 @@
           {
             "design": {
               "head": "assets/dot_ball.svg",
-              "border_radius": "",
               "shape": "assets/rec-mask.png",
               "color": "#AD5FF3"
             },
@@ -145,7 +190,6 @@
           {
             "design": {
               "head": "assets/school.svg",
-              "border_radius": "10px",
               "shape": "assets/sp.png",
               "color": "#61BFC9"
             },
@@ -156,7 +200,6 @@
           {
             "design": {
               "head": "assets/two_kids.svg",
-              "border_radius": "100%",
               "shape": "assets/hex.png",
               "color": "#FCCB13"
             },
@@ -167,7 +210,6 @@
           {
             "design": {
               "head": "assets/dot_ball.svg",
-              "border_radius": "",
               "shape": "assets/hex.png",
               "color": "#F7941E"
             },

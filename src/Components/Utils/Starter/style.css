@@ -1,16 +1,22 @@
 .starter-row-1 {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-block: 50px;
-    gap: 90px;
+    padding-block: 20px;
+    gap: 10px;
 }
 
 .starter-row-1 .animated {
+    width: 65%;
     text-align: center;
 }
 
-.animated .starter-row-1-col-2 {
+.starter-row-1-col-2 {
+    width: 54%;
+}
+
+.starter-row-1-col-2 .animated {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -19,7 +25,7 @@
     gap: 10px;
 }
 
-.animated .starter-row-1-col-2.wide {
+.starter-row-1-col-2.wide .animated {
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -28,12 +34,12 @@
     gap: 10px;
 }
 
-.animated .starter-row-1-col-2 img {
-    width: 50px;
+.starter-row-1-col-2 .animated img {
+    width: 70px;
     opacity: 0.2;
 }
 
-.animated .starter-row-1-col-2 h1 {
+.starter-row-1-col-2 .animated h1 {
     font-size: var(--h3);
     font-family: var(--ff-secondary);
     color: var(--pink);
@@ -41,32 +47,30 @@
     letter-spacing: 1px;
 }
 
-.animated .starter-row-1-col-2 h2 {
-    width: 60%;
-    padding-inline: 60px;
+.starter-row-1-col-2 .animated h2 {
+    width: 75%;
     font-size: var(--h1);
 }
 
-.animated .starter-row-1-col-2 p {
+.starter-row-1-col-2 .animated p {
     width: 68%;
-    padding-inline: 50px;
     font-size: var(--h4);
     color: var(--grey);
     line-height: 25px;
 }
 
-.animated .starter-row-1-col-3 {
-    width: 80%;
-    margin-left: -30%;
+.starter-row-1-col-3 {
+    width: 20%;
 }
 
 @media screen and (max-width: 1024px) {
     .starter-row-1-col-2 {
-        width: 75%;
+        width: 73%;
     }
 
-    .starter-row-1-col-2 p {
-        padding: 0px;
+    .starter-row-1-col-2 .animated p {
+        width: 70%;
+        padding-block: 5px;
     }
 
     .starter-row-1-col-2.wide {

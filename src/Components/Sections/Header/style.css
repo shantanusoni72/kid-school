@@ -1,13 +1,21 @@
+.header-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .header {
+    width: 90%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-inline: 60px;
-    padding-block: 10px;
+    padding-block: 11px;
 }
 
 .header-logo {
     width: 9%;
+    display: flex;
+    align-items: center;
 }
 
 .header-logo img {
@@ -16,7 +24,7 @@
 
 .header-menu ul {
     display: flex;
-    gap: 50px;
+    gap: 18px;
     list-style: none;
 }
 
@@ -44,7 +52,7 @@
     position: absolute;
     left: 0;
     top: 50%; 
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
     background-image: url('../../../../public/assets/canyon.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -125,7 +133,7 @@
     color: var(--black);
 }
 
-.fa-search:hover, .fa-shopping-cart:hover {
+.header-end a svg:hover {
     color: var(--gold);
 }
 

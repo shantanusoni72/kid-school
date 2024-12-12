@@ -18,40 +18,120 @@
 
 @keyframes rocketLaunching {
     0% {
-        transform: translate(0px, -20px);
+        transform: rotate(40deg) translate(0px, -20px);
     }
     25% {
-        transform: translate(0px, 0px);
+        transform: rotate(40deg) translate(0px, 0px);
     }
     50% {
-        transform: translate(0px, 20px);
+        transform: rotate(40deg) translate(0px, 20px);
     }
     75% {
-        transform: translate(0px, 0px);
+        transform: rotate(40deg) translate(0px, 0px);
     }
     100% {
-        transform: translate(0px, -20px);
+        transform: rotate(40deg) translate(0px, -20px);
     }
+}
+
+@keyframes underline_go_brruh {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 180px;
+    }
+}
+
+.program-row-1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 20px;
+    gap: 10px;
+}
+
+.program-row-1 .animated {
+    width: 65%;
+    text-align: center;
+}
+
+.program-row-1-col-2 {
+    width: 54%;
+}
+
+.program-row-1-col-2 .animated {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.program-row-1-col-2.wide .animated {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.program-row-1-col-2 .animated img {
+    width: 70px;
+    opacity: 0.2;
+}
+
+.program-row-1-col-2 .animated h1 {
+    font-size: var(--h3);
+    font-family: var(--ff-secondary);
+    color: var(--pink);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.program-row-1-col-2 .animated h2 {
+    width: 75%;
+    font-size: var(--h1);
+}
+
+.program-row-1-col-2 .animated p {
+    width: 68%;
+    font-size: var(--h4);
+    color: var(--grey);
+    line-height: 25px;
+}
+
+.program-row-1-col-3 {
+    width: 20%;
 }
 
 .planet_1 {
     width: 100%;
     animation: floatPlanet infinite 8s;
-    margin-left: 70%;
+    margin-left: 35%;
 }
 
 .abc_img, .pen_img {
-    width: 80%;
+    width: 70%;
 }
 
 .abc_img {
-    transform: rotate(330deg);
-    opacity: 0.2;
+    transform: scale(1.4) rotate(330deg);
+    opacity: 0.1;
+    position: absolute;
+    margin-left: -55%;
+    margin-top: -20%;
 }
 
 .pen_img {
-    margin-left: -50px;
-    margin-top: -400px;
+    position: absolute;
+    transform: scale(1.3);
+    margin-left: 5%;
+    margin-top: -57%;
+    opacity: 1;
 }
 
 .program-container {
@@ -71,6 +151,20 @@
     padding-block: 50px;
 }
 
+.program-row-2::after {
+    position: absolute;
+    content: "";
+    background-image: url('../../../../public/assets/drawn-rocket.svg');
+    background-position: center;
+    background-size: 120px;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    right: 5%;
+    margin-top: 32%;
+    animation: rocketLaunching infinite linear 3s;
+}
+
 .program-row-2 .animated {
     width: 40%;
 }
@@ -84,6 +178,24 @@
     padding-inline: 20px;
     padding-block: 60px;
     transition: 0.8s;
+}
+
+.program-card::after {
+    position: absolute;
+    content: "";
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+    bottom: 10px;
+    right: 20px;
+    display: none;
+}
+
+.program-card:hover::after {
+    display: block;
+    animation: bounceInUpRelax 1s;
 }
 
 .program-card:hover {
@@ -123,30 +235,29 @@
 }
 
 .program-card-text a {
-    text-decoration: underline;
-    text-decoration-style: wavy;
-    text-decoration-color: var(--gold);
-    text-underline-offset: 5px;
+    font-weight: var(--fw);
     color: var(--black);
+    text-decoration: none;
+}
+
+.program-card-text a::after {
+    position: absolute;
+    content: "";
+    background-image: url('../../../../public/assets/underline.svg');
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: 27px;
+    width: 16%;
+    height: 10px;
+    bottom: 32%;
+    left: 43%;
+}
+
+.program-card-text a:hover::after {
+    animation: underline_go_brruh infinite 7s;
 }
 
 .program-row-3 {
-    display: flex;
-    justify-content: end;
-}
-
-.rocket-outer {
-    transform: rotate(42deg);
-}
-
-.rocket-outer img {
-    width: 60%;
-    animation: rocketLaunching infinite 5s;
-    margin-top: -300px;
-    margin-right: -100px;
-}
-
-.program-row-4 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,10 +274,6 @@
     
     .rocket-outer {
         display: none;
-    }
-
-    .program-container {
-        padding-inline: 90px;
     }
     
     .program-row-2 .animated {

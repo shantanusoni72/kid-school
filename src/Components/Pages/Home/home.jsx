@@ -12,15 +12,17 @@ import Blog from '../../Sections/Blog/blog';
 import Methodology from '../../Sections/Methodology/methodology';
 import Newsletter from '../../Sections/Newsletter/newsletter';
 import Testimonial from '../../Sections/Testimonial/testimonial';
+import Banner from '../../Sections/Banner/banner';
 
 export default function Home({ home_page_content }) {
   return (
     <div className='home'>
       <Hero />
       <About />
-      <Programs />
+      <Programs data={home_page_content.home_page.program_section} />
       <Section_2 />
       <Facilities data={home_page_content.home_page.facilities_section} />
+      <Banner />
       <Intedu />
       <Garden />
       <Teachers data={home_page_content.home_page.teachers_section} />

@@ -14,6 +14,7 @@
     --fw: 600;
     --red: #EB1551;
     --pink: #EB1551;
+    --pink-dark: #ce2d68;
     --gold: #F7941E;
     --blue-light: #61BFC9;
     --blue: #0A6375;
@@ -135,5 +136,17 @@ html, body {
     }
     100% {
         transform: none;
+    }
+}
+
+@keyframes bounceInUpRelax {
+    0% {
+        transform: translate3d(0, 10px, 0);
+    }
+    50% {
+        transform: translate3d(0, -5px, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
     }
 }

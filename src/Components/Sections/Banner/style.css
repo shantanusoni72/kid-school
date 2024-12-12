@@ -1,0 +1,49 @@
+.banner-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--gold);
+}
+
+.banner {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    background-image: url('../../../../public/assets/alpha-overlay-image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.banner-item {
+    text-align: center;
+}
+
+.banner-item-thumb {
+    mask-image: url('../../../../public/assets/banner_background.svg');
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    background-color: var(--white);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-item-thumb img {
+    width: 90px;
+    height: 90px;
+}
+
+.banner-container h1 {
+    font-size: calc(var(--h1) + 2px);
+    color: var(--white);
+}
+
+.banner-container p {
+    font-size: calc(var(--h2) - 2px);
+    font-family: var(--ff-secondary);
+    color: var(--white);
+}

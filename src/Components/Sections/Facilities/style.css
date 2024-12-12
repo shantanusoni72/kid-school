@@ -13,7 +13,7 @@
 
 .facilities-card {
     width: 480px;
-    padding: 40px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,9 +32,16 @@
     background-color: var(--pink);
 }
 
+.facilities-card ~ .facilities-card-lower .svg {
+    transform: translate(0px, 0px);
+    transition: 0.4s;
+    background-color: var(--blue-light);
+}
+
 .facilities-card:hover ~ .facilities-card-lower .svg {
     transform: translate(55px, -30px);
     transition: 0.4s;
+    background-color: var(--pink-dark);
 }
 
 .facilities-card img {
@@ -90,6 +97,20 @@
 .planet_2_img {
     width: 90%;
     margin-left: -70%;
+}
+
+.curl_waves {
+    content: "";
+    background-image: url('../../../../public/assets/underline.svg');
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: 27px;
+    width: 45%;
+    height: 10px;
+}
+
+.curl_waves:hover {
+    animation: underline_go_brruh infinite 7s;
 }
 
 @media screen and (max-width: 1024px) {

@@ -8,11 +8,9 @@ export default function Section_2() {
     <div className='section_2'>
       <div className="section_2_text">
         <ScrollAnimation animateIn='bounceInUp' animateOnce={true}>
-          <label>
-            <img className='cap' src='assets/cap.svg' />
-            Harmonious
-            <img className='horse' src='assets/horse.svg' />
-          </label>
+          <span>
+            <label>Harmonious</label>
+          </span>
           <h2>Creative Learning Opportunity For Kids</h2>
           <p>
             Morbi mauris augue, pulvinar quis luctus eget, pretium sed massa. Phasellus gravida lacus quis eros lobortis, nec dapibus quam gravida. Duis sed augue vitae felis pellentesque varius nec quis nunc.
