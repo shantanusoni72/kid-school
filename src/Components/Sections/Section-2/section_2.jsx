@@ -15,7 +15,9 @@ export default function Section_2() {
           <p>
             Morbi mauris augue, pulvinar quis luctus eget, pretium sed massa. Phasellus gravida lacus quis eros lobortis, nec dapibus quam gravida. Duis sed augue vitae felis pellentesque varius nec quis nunc.
           </p>
-          <Button text='Creative Works' link="/" type='small' />
+          <div className="button-text">
+            <Button text='Creative Works' link="/" type='small' />
+          </div>
         </ScrollAnimation>
       </div>
       <div className="section_2_image">

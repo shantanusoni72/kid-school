@@ -1,18 +1,95 @@
 .facilities {
-    padding-block: 60px;
+    padding-block: 120px;
     background-color: var(--gold-lighter);
+}
+
+.facilities-row-1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 20px;
+    gap: 10px;
+}
+
+.facilities-row-1 .animated {
+    width: 65%;
+    text-align: center;
+}
+
+.facilities-row-1-col-1 {
+    display: flex;
+    justify-content: end;
+}
+
+.facilities-row-1-col-2 {
+    width: 54%;
+}
+
+.facilities-row-1-col-2 .animated {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.facilities-row-1-col-2 .animated img {
+    width: 70px;
+    opacity: 0.2;
+}
+
+.facilities-row-1-col-2 .animated h1 {
+    font-size: var(--h3);
+    font-family: var(--ff-secondary);
+    color: var(--pink);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.facilities-row-1-col-2 .animated h1::before {
+    position: absolute;
+    content: "";
+    background-image: url('../../../../public/assets/cap.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    margin-top: -7%;
+    margin-left: 5%;
+    opacity: 0.2;
+}
+
+.facilities-row-1-col-2 .animated h2 {
+    width: 50%;
+    font-size: var(--h1);
+}
+
+.facilities-row-1-col-2 .animated p {
+    width: 60%;
+    font-size: var(--h4);
+    color: var(--grey);
+    line-height: 25px;
+}
+
+.facilities-row-1-col-3 {
+    width: 20%;
+    display: flex;
+    justify-content: start;
 }
 
 .facilities-row-2 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 70px;
-    padding-block: 80px;
+    gap: 50px;
+    padding-block: 50px;
 }
 
 .facilities-card {
-    width: 480px;
+    width: 470px;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -90,13 +167,11 @@
 }
 
 .star_img {
-    width: 70%;
-    margin-left: 80%;
+    width: 100%;
 }
 
 .planet_2_img {
-    width: 90%;
-    margin-left: -70%;
+    width: 100%;
 }
 
 .curl_waves {
@@ -114,41 +189,140 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .star_img {
+    .facilities {
+        padding-block: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .facilities-row-1-col-1 {
         display: none;
     }
     
-    .planet_2_img {
+    .facilities-row-1-col-2 {
+        width: 100%;
+    }
+    
+    .facilities-row-1-col-2 .animated h1::before {
+        width: 45px;
+        height: 45px;
+        margin-top: -4.5%;
+        margin-left: 4%;
+    }
+    
+    .facilities-row-1-col-2 .animated p {
+        width: 46%;
+    }
+    
+    .facilities-row-1-col-3 {
         display: none;
     }
-
-    .facilities-card {
-        width: 300px;
+    
+    .facilities-row-2 {
+        width: 80%;
+        padding-block: 50px;
     }
-
+    
+    .facilities-card {
+        width: 280px;
+        gap: 15px;
+    }
+    
+    .svg {
+        width: 75px;
+        height: 75px;
+        margin-top: -11%;
+        margin-left: -4%;
+    }
+    
     .button-div {
-        margin-top: -4.5%;
-        margin-left: 8%;
-        position: absolute;
-        z-index: 10;
+        margin-top: -14%;
+        margin-left: -22%;
+    }
+    
+    .curl_waves {
+        width: 50%;
     }
 }
 
-@media screen and (max-width: 820px) {
-    .facilities-card {
-        width: 250px;
-        padding: 30px;
+@media screen and (max-width: 992px) {
+    .facilities {
+        padding-block: 80px;
     }
     
-    .button-div {
+    .facilities-row-1-col-2 .animated h2 {
+        width: 60%;
+    }
+
+    .facilities-row-1-col-2 .animated p {
+        width: 58%;
+    }
+    
+    .facilities-row-2 {
+        width: 100%;
+        gap: 30px;
+        padding-block: 20px;
+    }
+    
+    .facilities-card {
+        width: 280px;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .facilities {
+        padding-block: 80px;
+    }
+    
+    .facilities-row-1-col-2 .animated h2 {
+        width: 60%;
+    }
+
+    .facilities-row-1-col-2 .animated h1::before {
         margin-top: -5.5%;
-        margin-left: 10%;
+        margin-left: 5%;
+    }
+
+    .facilities-row-1-col-2 .animated p {
+        width: 62%;
+    }
+    
+    .facilities-row-2 {
+        width: 100%;
+        gap: 30px;
+        padding-block: 20px;
+    }
+    
+    .facilities-card {
+        width: 280px;
+        gap: 15px;
     }
 }
 
 @media screen and (max-width: 440px) {
-    .button-div {
-        margin-top: -12.5%;
-        margin-left: 13%;
+    .facilities {
+        padding-block: 60px;
+    }
+    
+    .facilities-row-1-col-2 .animated h2 {
+        width: 90%;
+        font-family: calc(var(--h1) - 4px);
+        line-height: 40px;
+    }
+
+    .facilities-row-1-col-2 .animated h1::before {
+        margin-top: -10.5%;
+        margin-left: 10%;
+    }
+
+    .facilities-row-1-col-2 .animated p {
+        width: 80%;
+    }
+    
+    .facilities-row-2 {
+        flex-direction: column;
+        align-items: center;
     }
 }

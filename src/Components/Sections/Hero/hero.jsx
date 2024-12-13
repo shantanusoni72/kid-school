@@ -29,11 +29,13 @@ export default function Hero() {
                     <h3 className='sub-heading xl'>Center For Excellence</h3>
                     <a href='#'>Know More</a>
                 </div>
-                <div className='carousel-item' style={{ backgroundImage: `url('assets/slider-2.jpg')` }}>
-                    <h1>20%</h1>
-                    <h2>Flat Off</h2>
-                    <h3>On Registration</h3>
-                    <a href='#'>Know More</a>
+                <div className='carousel-item second' style={{ backgroundImage: `url('assets/slider-2.jpg')` }}>
+                    <div className="inner">
+                        <h1>20%</h1>
+                        <h2>Flat Off</h2>
+                        <h3>On Registration</h3>
+                        <a href='#'>Know More</a>
+                    </div>
                 </div>
                 <div className='carousel-item' style={{ backgroundImage: `url('assets/slider-3.jpg')` }}>
                     <h2 className='heading xl'>Children Focused Education</h2>

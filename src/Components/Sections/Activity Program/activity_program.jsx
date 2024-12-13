@@ -5,22 +5,13 @@ import './style.css';
 
 export default function ActivityProgram({ data }) {
   return (
-    <div className='activity_program'>
-      <div className="activity_program-row-1">
-        <div className="activity_program-row-1-col-1"></div>
-        <div className='activity_program-row-1-col-2'>
-          <ScrollAnimation animateIn='bounceInUp' animateOnce={true}>
-            <img src='assets/cap.svg' alt='' />
-            <h1>{data.banner.starter}</h1>
-            <h2>{data.banner.heading}</h2>
-            <p>{data.banner.paragraph}</p>
-          </ScrollAnimation>
-        </div>
-        <div className="activity_program-row-1-col-3">
-          <ScrollAnimation animateIn='bounceInDown' animateOnce={true}>
-            <img className='rainbow_img' src='assets/rainbow.svg' alt='rainbow' />
-          </ScrollAnimation>
-        </div>
+    <div className='activity-program'>
+      <div className="activity-program-row">
+        <ScrollAnimation animateIn='bounceInUp' animateOnce={true}>
+          <h1>{data.banner.starter}</h1>
+          <h2>{data.banner.heading}</h2>
+          <p>{data.banner.paragraph}</p>
+        </ScrollAnimation>
       </div>
       <div className="activity_program_carousel_outer">
         <Carousel

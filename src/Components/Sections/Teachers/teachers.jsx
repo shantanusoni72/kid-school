@@ -1,20 +1,19 @@
 import Carousel from 'react-multi-carousel';
-import Starter from '../../Utils/Starter/starter';
+import ScrollAnimation from 'react-animate-on-scroll';
 import './style.css';
 
 export default function Teachers({ data }) {
     return (
         <div className="teachers-container">
             <div className='teachers'>
-                <Starter
-                    starter={data.banner.starter}
-                    heading={data.banner.heading}
-                    paragraph={data.banner.paragraph}
-                    starter_image='assets/cap.svg'
-                    container_1={
-                        <img className='people_gossiping_img' src='assets/people_gossiping.svg' alt='people_gossiping' />
-                    }
-                />
+                <div className="teacher-row-1">
+                    <ScrollAnimation animateIn='bounceInUp' animateOnce={true}>
+                        <img src='assets/cap.svg' alt='' />
+                        <h1>{data.banner.starter}</h1>
+                        <h2>{data.banner.heading}</h2>
+                        <p>{data.banner.paragraph}</p>
+                    </ScrollAnimation>
+                </div>
                 <div className="teacher-carousel-outer">
                     <Carousel
                         responsive={data.responsive}

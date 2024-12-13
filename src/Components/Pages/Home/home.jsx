@@ -22,7 +22,7 @@ export default function Home({ home_page_content }) {
       <Programs data={home_page_content.home_page.program_section} />
       <Section_2 />
       <Facilities data={home_page_content.home_page.facilities_section} />
-      <Banner />
+      <Banner data={home_page_content.home_page.banner_section} />
       <Intedu />
       <Garden />
       <Teachers data={home_page_content.home_page.teachers_section} />

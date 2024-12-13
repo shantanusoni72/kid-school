@@ -1,45 +1,28 @@
-.activity_program-row-1 {
+.activity-program {
+    padding-block: 40px;
+}
+
+.activity-program-row {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding-block: 20px;
-    gap: 10px;
+    padding-block: 30px;
 }
 
-.activity_program-row-1 .animated {
+.activity-program-row .animated {
     width: 65%;
-    text-align: center;
-}
-
-.activity_program-row-1-col-2 {
-    width: 54%;
-}
-
-.activity_program-row-1-col-2 .animated {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 5px;
     text-align: center;
-    gap: 10px;
 }
 
-.activity_program-row-1-col-2.wide .animated {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
+.activity-program-row .animated img {
+    width: 40px;
 }
 
-.activity_program-row-1-col-2 .animated img {
-    width: 70px;
-    opacity: 0.2;
-}
-
-.activity_program-row-1-col-2 .animated h1 {
+.activity-program-row .animated h1 {
     font-size: var(--h3);
     font-family: var(--ff-secondary);
     color: var(--pink);
@@ -47,20 +30,29 @@
     letter-spacing: 1px;
 }
 
-.activity_program-row-1-col-2 .animated h2 {
-    width: 75%;
+.activity-program-row .animated h1::before {
+    position: absolute;
+    content: "";
+    background-image: url('../../../../public/assets/cap.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-top: -4%;
+    margin-left: 5%;
+    opacity: 0.4;
+}
+
+.activity-program-row .animated h2 {
     font-size: var(--h1);
 }
 
-.activity_program-row-1-col-2 .animated p {
-    width: 68%;
-    font-size: var(--h4);
+.activity-program-row .animated p {
+    width: 55%;
     color: var(--grey);
-    line-height: 25px;
-}
-
-.activity_program-row-1-col-3 {
-    width: 20%;
+    padding-block: 4px;
+    line-height: 26px;
 }
 
 .activity_program_carousel_outer {
@@ -238,75 +230,4 @@ img.rainbow_img {
 
 .activity_program_carousel .react-multiple-carousel__arrow--right::before {
     content: none !important;
-}
-
-@media screen and (max-width: 1024px) {
-    img.rainbow_img {
-        margin-top: -4%;
-        margin-left: -13%;
-        width: 14%;
-    }
-    
-    .activity_program_item img.profile {
-        width: 27%;
-        margin-bottom: 20px;
-    }
-
-    .activity_program_item p {
-        width: 60%;
-    }
-    
-    .activity_program_carousel .react-multiple-carousel__arrow--left {
-        background-size: 80% !important;
-        margin-left: 15%;
-        margin-top: 18%;
-    }
-    
-    .activity_program_carousel .react-multiple-carousel__arrow--right {
-        background-size: 80% !important;
-        margin-right: 10%;
-        margin-top: 18%;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .activity_program_item img.profile {
-        width: 30%;
-    }
-
-    .activity_program_item p {
-        width: 70%;
-    }
-    
-    .activity_program_carousel .react-multiple-carousel__arrow--left {
-        background-size: 70% !important;
-        margin-left: 13%;
-    }
-    
-    .activity_program_carousel .react-multiple-carousel__arrow--right {
-        background-size: 70% !important;
-        margin-right: 5%;
-    }
-}
-
-@media screen and (max-width: 440px) {
-    .activity_program_item img.profile {
-        width: 60%;
-    }
-
-    .activity_program_item p {
-        width: 100%;
-    }
-    
-    .activity_program_carousel .react-multiple-carousel__arrow--left {
-        background-size: 70% !important;
-        margin-left: 0%;
-        margin-top: -30%;
-    }
-    
-    .activity_program_carousel .react-multiple-carousel__arrow--right {
-        background-size: 70% !important;
-        margin-right: -13%;
-        margin-top: -30%;
-    }
 }
