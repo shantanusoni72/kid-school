@@ -34,7 +34,7 @@ export default function Header() {
                     </ul>
                 </div>
                 <div className='header-end'>
-                    <i onClick={() => document.querySelector('.mobile-menu').style.display = 'flex'} class="fa fa-bars" aria-hidden="true"><span>Menu</span></i>
+                    <i onClick={() => document.querySelector('.mobile-menu').classList.remove('hidden')} class="fa fa-bars" aria-hidden="true"><span>Menu</span></i>
                     <a href='/'>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -68,9 +68,9 @@ export default function Header() {
                 </div>
             </div>
         </div>
-        <div className="mobile-menu">
+        <div className="mobile-menu hidden">
             <div className="close">
-                <i onClick={() => document.querySelector('.mobile-menu').style.display = 'none'} class="fa fa-times" aria-hidden="true"></i>
+                <i onClick={() => document.querySelector('.mobile-menu').classList.add('hidden')} class="fa fa-times" aria-hidden="true"></i>
             </div>
             <ul>
                 <li onClick={() => setMenuItemOnMobile(1)} className={`${getMenuItemOnMobile === 1 ? 'selected' : ''}`}><a>Home</a><i class="fa fa-angle-right" aria-hidden="true"></i></li>

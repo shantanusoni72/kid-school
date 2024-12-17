@@ -1,3 +1,34 @@
+@keyframes candleRising {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes openMobileMenu {
+    0% {
+        transform: translateX(300px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes closeMobileMenu {
+    0% {
+        transform: translateX(0px);
+        visibility: visible;
+    }
+    100% {
+        transform: translateX(300px);
+        visibility: hidden;
+    }
+}
+
 .header-container {
     width: 100%;
     display: flex;
@@ -65,17 +96,6 @@
     color: var(--gold);
 }
 
-@keyframes candleRising {
-    0% {
-        transform: translateY(10px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-
 .header-menu-anchor:hover a::before {
     content: "";
     position: absolute;
@@ -90,12 +110,6 @@
     height: 24px;
     animation: candleRising 0.3s linear;
 }
-
-
-
-
-
-
 
 .header-menu li img.show {
     display: inline-flex;
@@ -141,24 +155,6 @@
     padding-inline: 10px;
 }
 
-@keyframes openMobileMenu {
-    0% {
-        transform: translateX(300px);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes closeMobileMenu {
-    0% {
-        transform: translateX(0px);
-    }
-    100% {
-        transform: translateX(300px);
-    }
-}
-
 .mobile-menu {
     width: 20%;
     height: 100vh;
@@ -167,12 +163,23 @@
     top: 0px;
     right: 0px;
     background-color: var(--white);
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     animation: openMobileMenu 0.4s;
-    display: none;
+    visibility: visible;
+}
 
+.mobile-menu.hidden {
+    visibility: hidden;
+    animation: closeMobileMenu 0.4s;
+}
+
+.mobile-menu ~ .home {
+    filter: brightness(0.5);
+}
+
+.mobile-menu.hidden ~ .home {
+    filter: brightness(1);
 }
 
 .mobile-menu ul {
@@ -202,11 +209,6 @@
     padding: 20px;
 }
 
-/* .mobile-menu:active:has(> .close) {
-    border: 1px solid red;
-    animation: closeMobileMenu 0.4s;
-} */
-
 .mobile-menu ul li.selected {
     background-color: var(--pink);
 }
@@ -222,5 +224,25 @@
 
     .fa-bars {
         display: block;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .header-logo {
+        width: 24%;
+    }
+
+    .header {
+        padding-block: 0px;
+    }
+
+    .header-end i span {
+        display: none;
+    }
+
+    .mobile-menu {
+        width: 70%;
+        position: absolute;
+        z-index: 2;
     }
 }

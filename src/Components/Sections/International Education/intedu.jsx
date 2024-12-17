@@ -3,16 +3,16 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import './style.css';
 
 export default function Intedu() {
-    // const intedu = {
-    //     cards: [
-    //         'assets/g1.jpg',
-    //         'assets/g2.jpg',
-    //         'assets/g3.jpg',
-    //         'assets/g4.jpg',
-    //         'assets/g5.jpg',
-    //         'assets/g6.jpg'
-    //     ]
-    // }
+    const intedu = {
+        cards: [
+            'assets/g1.jpg',
+            'assets/g2.jpg',
+            'assets/g3.jpg',
+            'assets/g4.jpg',
+            'assets/g5.jpg',
+            'assets/g6.jpg'
+        ]
+    }
 
     return (
         <div className='intedu-container'>
@@ -37,26 +37,26 @@ export default function Intedu() {
                     </ScrollAnimation>
                 </div>
             </div>
-            {/* <div class="grid-container">
-                <div class="grid-item g1">
+            <div class="grid-container">
+                <div class="div1">
                 <img src={intedu.cards[0]} />
                 </div>
-                <div class="grid-item g2">
+                <div class="div2">
                 <img src={intedu.cards[1]} />
                 </div>
-                <div class="grid-item g3">
+                <div class="div3">
                 <img src={intedu.cards[2]} />
                 </div>
-                <div class="grid-item g4">
+                <div class="div4">
                 <img src={intedu.cards[3]} />
                 </div>
-                <div class="grid-item g5">
+                <div class="div5">
                 <img src={intedu.cards[4]} />
                 </div>
-                <div class="grid-item g6">
+                <div class="div6">
                 <img src={intedu.cards[5]} />
                 </div>
-            </div> */}
+            </div>
         </div>
     )
 }

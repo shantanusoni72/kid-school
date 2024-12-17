@@ -34,6 +34,10 @@
     background-color: var(--blue);
 }
 
+.blog-outer {
+    padding-block: 80px;
+}
+
 .blog-outer img.ufo {
     width: 150px;
     margin-inline: 45%;
@@ -215,52 +219,113 @@
     transform: scaleX(-1);
 }
 
-.blog-container-top.first {
-    position: relative;
-    height: 200px;
-    mask-image: url('../../../../public/assets/wavebg-overlight-too-length.png');
-    mask-position: top;
-    mask-size: cover;
-    mask-repeat: no-repeat;
-    background-color: var(--blue);
-    opacity: 0.1;
-    z-index: -1;
-    margin-bottom: -180px;
+@media screen and (max-width: 1024px) {
+    .blog-container::before, .blog-container::after, .blog-outer::before, .blog-outer::after {
+        display: none;
+    }
+
+    .painter, .ducky, .train, .right-arrow-dashed {
+        display: none;
+    }
+
+    .blog-outer {
+        padding-block: 40px;
+        background-color: var(--blue);
+    }
+
+    .blog-outer img.ufo {
+        width: 20%;
+    }
+
+    .blog-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        height: auto;
+    }
+
+    .blog-text-outer {
+        width: 100%;
+    }
+
+    .blog-text {
+        width: 70%;
+    }
+
+    .blog-images {
+        flex-direction: row;
+        margin-top: 0%;;
+    }
+
+    .blog-images img.b1-bg {
+        width: 100%;
+    }
+
+    .blog-images img.b1 {
+        width: 45%;
+        left: 28.5%;
+    }
+
+    .blog-images img.b2  {
+        margin: 0px;
+    }
 }
 
-.blog-container-top.second {
-    height: 180px;
-    mask-image: url('../../../../public/assets/wavebg-overlight-too-length.png');
-    mask-position: top;
-    mask-size: cover;
-    mask-repeat: no-repeat;
-    background-color: var(--blue);
-    opacity: 1;
-    transform: scaleX(-1);
+@media screen and (max-width: 992px) {
+    .blog-outer img.ufo {
+        width: 20%;
+    }
+
+    .blog-text {
+        width: 70%;
+    }
 }
 
-.blog-container-bottom.first {
-    position: relative;
-    height: 180px;
-    mask-image: url('../../../../public/assets/wavebg-overlight-too-length.png');
-    mask-position: top;
-    mask-size: cover;
-    mask-repeat: no-repeat;
-    background-color: var(--blue);
-    opacity: 0.1;
-    transform: scaleX(-1) scaleY(-1);
-    z-index: -1;
-}
+@media screen and (max-width: 440px) {
+    .blog-outer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .blog-outer img.ufo {
+        width: 25%;
+        margin: 0px;
+    }
 
-.blog-container-bottom.second {
-    position: relative;
-    height: 190px;
-    mask-image: url('../../../../public/assets/wavebg-overlight-too-length.png');
-    mask-position: top;
-    mask-size: cover;
-    mask-repeat: no-repeat;
-    background-color: var(--blue);
-    opacity: 1;
-    transform: scaleY(-1);
-    margin-top: -14%;
+    .blog {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .blog-text-intro h2 {
+        font-size: calc(var(--h1) - 4px);
+    }
+
+    .blog-text {
+        width: 90%;
+    }
+
+    .blog span label {
+        width: 80%;
+    }
+
+    .blog-images {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .blog-images img.b1-bg {
+        width: 140%;
+    }
+
+    .blog-images img.b1 {
+        width: 60%;
+        left: 20%;
+    }
+
+    .blog-images img.b2  {
+        width: 100%;
+        margin: 0px;
+    }
 }

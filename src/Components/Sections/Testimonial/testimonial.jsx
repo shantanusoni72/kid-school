@@ -1,18 +1,20 @@
-import Starter from '../../Utils/Starter/starter';
+import ScrollAnimation from 'react-animate-on-scroll';
 import Carousel from 'react-multi-carousel';
 import './style.css';
 
 export default function Testimonial({ data }) {
   return (
     <div className='testimonial'>
-      <Starter
-        starter={data.banner.starter}
-        heading={data.banner.heading}
-        paragraph={data.banner.paragraph}
-        starter_image='assets/strawberry.svg'
-        container_1={null}
-        container_2={null}
-      />
+      <div className="testimonial-row-1">
+        <div className='testimonial-row-1-col-2'>
+          <ScrollAnimation animateIn='bounceInUp' animateOnce={true}>
+            <img src='assets/strawberry.svg' alt='' />
+            <h1>{data.banner.starter}</h1>
+            <h2>{data.banner.heading}</h2>
+            <p>{data.banner.paragraph}</p>
+          </ScrollAnimation>
+        </div>
+      </div>
       <Carousel
         responsive={data.responsive}
         infinite={true}
@@ -22,7 +24,6 @@ export default function Testimonial({ data }) {
         {
           data.cards.map((item, index) => (
             <>
-              <img className='flowers' src='assets/flowers.png' alt='flowers' />
               <div className="testimonial-item-row-1">
                 <div className='testimonial-item-col-1'>
                   <span>
@@ -45,8 +46,6 @@ export default function Testimonial({ data }) {
                   <img src={item.image} alt={`testimonial-${index = 1}`} />
                 </div>
               </div>
-              <img className='stars' src='assets/stars.svg' alt='stars' />
-              <img className='waves' src='assets/waves.svg' alt='waves' />
             </>
           ))
         }

@@ -13,6 +13,7 @@ import Methodology from '../../Sections/Methodology/methodology';
 import Newsletter from '../../Sections/Newsletter/newsletter';
 import Testimonial from '../../Sections/Testimonial/testimonial';
 import Banner from '../../Sections/Banner/banner';
+import './style.css';
 
 export default function Home({ home_page_content }) {
   return (

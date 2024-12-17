@@ -1,22 +1,36 @@
-.methodology {
+@keyframes wavesBtn {
+    to {
+        transform: scale(1.4);
+        opacity: 0;
+    }
+}
+
+.methodology-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     background-color: #FEF9F5;
+}
+
+.methodology {
+    width: 78%;
 }
 
 .methodology-row-1 {
     display: flex;
+    justify-content: space-between;
     padding-block: 40px;
 }
 
 .methodology-row-1-col-1 {
-    width: 40%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding-inline: 120px;
 }
 
 .methodology-row-1-col-1 img {
-    width: 15%;
+    width: 10%;
     opacity: 0.3;
 }
 
@@ -31,12 +45,16 @@
 }
 
 .methodology-row-1-col-1 p {
+    width: 70%;
     font-size: var(--h4);
     color: var(--grey);
+    line-height: 25px;
+    padding-block: 5px;
 }
 
 .methodology-row-1-col-2 {
-    width: 60%;
+    display: flex;
+    justify-content: end;
 }
 
 .methodology-row-1-col-2 img {
@@ -62,12 +80,6 @@
     cursor: pointer;
 }
 
-@keyframes wavesBtn {
-    to {
-        transform: scale(1.4);
-        opacity: 0;
-    }
-}
 
 .methodology-row-1-col-2::after {
     position: absolute;
@@ -165,7 +177,7 @@
         width: 100%;
         text-align: center;
     }
-    
+
     .methodology-row-1-col-2 img {
         width: 70%;
         margin-block: 50px;
@@ -180,15 +192,15 @@
     .hightlighted {
         padding: 55px;
     }
-    
+
     .hightlighted h1 {
         font-size: calc(var(--h2) - 4px);
     }
-    
+
     .hightlighted p {
         font-size: calc(var(--h2) - 4px);
     }
-    
+
     .methodology-row-2-card a {
         font-size: calc(var(--h2) - 4px);
     }
@@ -198,7 +210,7 @@
     .methodology-row-1-col-1 p {
         width: 90%;
     }
-    
+
     .methodology-row-1-col-2 img {
         width: 85%;
     }
@@ -208,7 +220,7 @@
     .methodology-row-1-col-1 p {
         width: 100%;
     }
-    
+
     .methodology-row-1-col-2 img {
         width: 90%;
     }
@@ -218,15 +230,38 @@
     .methodology-row-1-col-1 {
         padding: 0px;
     }
-    
+
     .methodology-row-1-col-1 img {
         width: 15%;
     }
 
-    .methodology-row-1-col-1 p {
-        width: 80%;
+    .methodology-row-1-col-2 {
+        position: relative;
     }
-    
+
+    .methodology-row-1-col-2 img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .pause {
+        width: 50px;
+        height: 60px;
+        top: 60%;
+        right: 40%;
+    }
+
+    .methodology-row-1-col-2::after {
+        width: 50px;
+        height: 60px;
+        top: 35%;
+        right: 40%;
+    }
+
+    .methodology-row-1-col-1 p {
+        width: 100%;
+    }
+
     .methodology-row-2 {
         display: none;
     }

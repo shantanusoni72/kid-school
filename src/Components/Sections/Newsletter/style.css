@@ -1,6 +1,107 @@
 .newsletter {
-    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     background-color: #FEF9F5;
+    padding-block: 50px;
+}
+
+.newsletter-row-1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 20px;
+    gap: 10px;
+    position: relative;
+}
+
+.newsletter-row-1-col-2::before {
+    position: absolute;
+    content: "";
+    background-image: url('../../../../public/assets/planet.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 140px;
+    height: 130px;
+    top: 50%;
+    left: 13%;
+    transform: rotate(340deg);
+}
+
+.newsletter::before {
+    position: absolute;
+    content: "";
+    background-image: url('../../../../public/assets/stars.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 84%;
+    width: 80px;
+    height: 70px;
+    margin-top: 1%;
+    left: 8%;
+    transform: rotate(-80deg);
+}
+
+.newsletter-row-1-col-2::after {
+    position: absolute;
+    content: "";
+    background-image: url('../../../../public/assets/ufo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 140px;
+    height: 120px;
+    right: 13%;
+    top: 40%;
+    transform: rotate(30deg);
+}
+
+.newsletter-row-1 .animated {
+    text-align: center;
+}
+
+.newsletter-row-1-col-2 {
+    width: 75%;
+}
+
+.newsletter-row-1-col-2 .animated {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.newsletter-row-1-col-2 .animated img {
+    width: 70px;
+    opacity: 0.2;
+}
+
+.newsletter-row-1-col-2 .animated h1 {
+    font-size: var(--h3);
+    font-family: var(--ff-secondary);
+    color: var(--pink);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.newsletter-row-1-col-2 .animated h2 {
+    width: 75%;
+    font-size: var(--h1);
+}
+
+.newsletter-row-1-col-2 .animated p {
+    width: 68%;
+    font-size: var(--h4);
+    color: var(--grey);
+    line-height: 25px;
+}
+
+.newsletter-row-1-col-3 {
+    width: 20%;
 }
 
 .ufo-outer {
@@ -33,4 +134,62 @@ img.stars {
 img.nl_planet_1 {
     width: 150px;
     animation: floatPlanet infinite 8s;
+}
+
+@media screen and (max-width: 1024px) {
+    .newsletter::before {
+        display: none;
+    }
+    
+    .newsletter-row-1-col-2::after {
+        display: none;
+    }
+
+    .newsletter-row-1-col-2::before {
+        display: none;
+    }
+    
+    .newsletter-row-1-col-2 .animated h2 {
+        width: 65%;
+    }
+    
+    .newsletter-row-1-col-2 .animated p {
+        width: 63%;
+        padding-block: 10px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .newsletter-row-1-col-2 .animated h2 {
+        width: 80%;
+    }
+    
+    .newsletter-row-1-col-2 .animated p {
+        width: 79%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .newsletter-row-1-col-2 .animated p {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .newsletter {
+        gap: 10px;
+    }
+
+    .newsletter-row-1-col-2 {
+        width: 80%;
+    }
+
+    .newsletter-row-1-col-2 .animated h2 {
+        width: 100%;
+        font-size: calc(var(--h1) - 4px);
+    }
+    
+    .newsletter-row-1-col-2 .animated p {
+        width: 100%;
+    }
 }

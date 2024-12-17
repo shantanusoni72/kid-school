@@ -62,27 +62,30 @@ export default function Footer() {
                             <img src='assets/g7.jpg' alt='' />
                         </div>
                     </div>
-                    <div className="footer-row-2-col-5">
-                        <img src='assets/pencil_boy_2.png' alt='' />
-                    </div>
                 </div>
                 <div className="footer-row-3">
-                    row 3
+                    <div className='underline_bg'></div>
+                    <div className='underline_bg'></div>
                 </div>
                 <div className="footer-row-4">
-                    <p>Copyright © 2023 Kids by Wedesigntech. All Rights Reserved.</p>
-                    <img src='assets/hand.png' alt='hand' />
-                    <div>
+                    <div className="footer-row-4-col-1">
+                        <p>Copyright © 2023 Kids by Wedesigntech. All Rights Reserved.</p>
+                    </div>
+                    <div className="footer-row-4-col-2">
+                        <img src='assets/hand.png' alt='hand' />
+                    </div>
+                    <div className='footer-row-4-col-3'>
                         <span>
                             <img src='assets/visa.svg' alt='visa' />
                             <img src='assets/master_card.svg' alt='master_card' />
                             <img src='assets/paypal.svg' alt='paypal' />
                             <img src='assets/amazon_pay.svg' alt='amazon_pay' />
                         </span>
-                        <p>
-                            <a href='/'>Privacy Policy Terms</a> |
+                        <span>
+                            <a href='/'>Privacy Policy Terms</a>
+                            <label>|</label>
                             <a href='/'>Conditions</a>
-                        </p>
+                        </span>
                     </div>
                 </div>
             </div>

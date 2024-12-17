@@ -49,7 +49,7 @@
 }
 
 .activity-program-row .animated p {
-    width: 55%;
+    width: 53%;
     color: var(--grey);
     padding-block: 4px;
     line-height: 26px;
@@ -62,7 +62,7 @@
 }
 
 .activity_program_carousel {
-    width: 80%;
+    width: 85%;
     padding-block: 55px;
 }
 
@@ -230,4 +230,8 @@ img.rainbow_img {
 
 .activity_program_carousel .react-multiple-carousel__arrow--right::before {
     content: none !important;
+}
+
+@media screen and (max-width: 1024px) {
+    
 }

@@ -134,6 +134,11 @@
     font-size: var(--h2);
 }
 
+.facilities-card h1 a {
+    color: var(--white);
+    text-decoration: none;
+}
+
 .facilities-card p {
     padding-inline: 8px;
     font-size: var(--h4);
@@ -184,7 +189,7 @@
     height: 10px;
 }
 
-.curl_waves:hover {
+.curl_waves:hover, .facilities-card h1:hover ~ .curl_waves {
     animation: underline_go_brruh infinite 7s;
 }
 

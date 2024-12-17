@@ -31,7 +31,7 @@ export default function Facilities({ data }) {
             <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
               <div className="facilities-card" key={index}>
                 <img src={item.image} alt={item.heading} />
-                <h1>{item.heading}</h1>
+                <h1><a href='#'>{item.heading}</a></h1>
                 <div className="curl_waves"></div>
                 <p>{item.paragraph}</p>
               </div>

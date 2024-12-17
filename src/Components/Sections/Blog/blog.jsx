@@ -29,8 +29,6 @@ export default function Blog() {
     return (
         <div className="blog-outer">
             <img className='ufo' src='/assets/sexy_ufo.svg' alt='' />
-            {/* <div className='blog-container-top first'></div>
-            <div className='blog-container-top second'></div> */}
             <img className='painter' src='assets/painter.png' alt='painter' />
             <div className='blog-container'>
                 <div className="blog-text-outer">
@@ -67,8 +65,6 @@ export default function Blog() {
                     <img className='ducky' src='assets/ducky.svg' alt='' />
                 </div>
             </div>
-            {/* <div className='blog-container-bottom first'></div>
-            <div className='blog-container-bottom second'></div> */}
         </div>
     )
 }
