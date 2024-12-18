@@ -33,6 +33,7 @@
     font-family: var(--ff-primary);
     margin: 0px;
     padding: 0px;
+    transition: 0.1s linear;
     box-sizing: border-box;
 }
 

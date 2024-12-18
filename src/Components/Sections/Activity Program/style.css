@@ -1,5 +1,6 @@
 .activity-program {
     padding-block: 40px;
+    padding-bottom: 140px;
 }
 
 .activity-program-row {
@@ -233,5 +234,7 @@ img.rainbow_img {
 }
 
 @media screen and (max-width: 1024px) {
-    
+    .activity-program {
+        padding-bottom: 0px;
+    }
 }

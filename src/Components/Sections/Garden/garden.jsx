@@ -4,10 +4,9 @@ import './style.css';
 export default function Garden() {
     return (
         <div className='garden'>
-            <div className="garden-inner">
-                <img src='assets/pencil_girl.png' alt='pencil_girl' />
-                <img src='assets/pencil_boy.png' alt='pencil_boy' />
-            </div>
+            <img src='assets/garden_images.png' alt='' />
+            <img src='assets/garden_images_tablet.png' alt='' />
+            <img src='assets/garden_images_mobile.png' alt='' />
         </div>
     )
 }

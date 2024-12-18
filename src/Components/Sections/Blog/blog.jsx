@@ -28,6 +28,8 @@ export default function Blog() {
 
     return (
         <div className="blog-outer">
+            {/* <div className='blog-top-light'></div>
+            <div className='blog-top-normal'></div> */}
             <img className='ufo' src='/assets/sexy_ufo.svg' alt='' />
             <img className='painter' src='assets/painter.png' alt='painter' />
             <div className='blog-container'>
@@ -65,6 +67,7 @@ export default function Blog() {
                     <img className='ducky' src='assets/ducky.svg' alt='' />
                 </div>
             </div>
+            <img class='bottom' src='assets/bottom.png' alt='' />
         </div>
     )
 }

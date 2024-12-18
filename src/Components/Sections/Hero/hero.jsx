@@ -1,5 +1,6 @@
 import React from 'react';
 import Carousel from 'react-multi-carousel';
+import ScrollAnimation from 'react-animate-on-scroll';
 import './style.css';
 
 export default function Hero() {
@@ -42,6 +43,7 @@ export default function Hero() {
                     </div>
                 </div>
                 <div className='carousel-item' style={{ backgroundImage: `url('assets/slider-3.jpg')` }}>
+
                     <div className="carousel-item-heading">
                         <h2 className='heading xl'>Children Focused Education</h2>
                         <h3 className='sub-heading xl'>Early Education</h3>

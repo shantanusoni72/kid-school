@@ -16,31 +16,11 @@
     background-color: var(--blue);
 }
 
-.blog-outer::after {
-    width: 100%;
-    margin-block: 80px;
-    position: absolute;
-    content: "";
-    mask-image: url('../../../../public/assets/wavebg-overlight-too-length.png');
-    mask-position: top;
-    mask-repeat: repeat-x;
-    mask-size: 100%;
-    width: 100%;
-    height: 190px;
-    margin-top: -0.5%;
-    left: 0%;
-    opacity: 0.2;
-    transform: scaleX(1) scale(-1);
-    background-color: var(--blue);
-}
-
-.blog-outer {
-    padding-block: 80px;
-}
-
 .blog-outer img.ufo {
     width: 150px;
     margin-inline: 45%;
+    position: relative;
+    z-index: 1;
 }
 
 .blog-container {
@@ -62,20 +42,6 @@
     margin-top: -15.5%;
     left: 0%;
     transform: scaleX(-1);
-}
-
-.blog-container::after {
-    position: absolute;
-    content: "";
-    background-image: url('../../../../public/assets/wavebg-overlight-too-length.png');
-    background-position: top;
-    background-repeat: repeat-x;
-    background-size: 100%;
-    width: 100%;
-    height: 190px;
-    margin-top: 42.5%;
-    left: 0%;
-    transform: scaleX(1) scaleY(-1);
 }
 
 .blog-outer img.painter {
@@ -231,6 +197,10 @@
     .blog-outer {
         padding-block: 40px;
         background-color: var(--blue);
+    }
+
+    .blog-outer img.bottom {
+        display: none;
     }
 
     .blog-outer img.ufo {

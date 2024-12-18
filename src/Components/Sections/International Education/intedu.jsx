@@ -37,26 +37,40 @@ export default function Intedu() {
                     </ScrollAnimation>
                 </div>
             </div>
-            <div class="grid-container">
-                <div class="div1">
-                <img src={intedu.cards[0]} />
+            <div className="flex-container">
+                <div className="flex-row-1-col-1">
+                    <div className="inner">
+                        <img src='assets/g1.jpg' alt='' />
+                    </div>
                 </div>
-                <div class="div2">
-                <img src={intedu.cards[1]} />
+                <div className="flex-row-1-col-2">
+                    <div className="flex-row-1-col-2-part-1">
+                        <div className="inner">
+                            <img src='assets/g2.jpg' alt='' />
+                        </div>
+                        <div className="inner">
+                            <img src='assets/g3.jpg' alt='' />
+                        </div>
+                    </div>
+                    <div className="flex-row-1-col-2-part-2">
+                        <div className="inner">
+                            <img src='assets/g4.jpg' alt='' />
+                        </div>
+                    </div>
                 </div>
-                <div class="div3">
-                <img src={intedu.cards[2]} />
-                </div>
-                <div class="div4">
-                <img src={intedu.cards[3]} />
-                </div>
-                <div class="div5">
-                <img src={intedu.cards[4]} />
-                </div>
-                <div class="div6">
-                <img src={intedu.cards[5]} />
+                <div className="flex-row-1-col-3">
+                    <div className="flex-row-1-col-3-part-1">
+                        <div className="inner">
+                            <img src='assets/g5.jpg' alt='' />
+                        </div>
+                    </div>
+                    <div className="flex-row-1-col-3-part-2">
+                        <div className="inner">
+                            <img src='assets/g6.jpg' alt='' />
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
