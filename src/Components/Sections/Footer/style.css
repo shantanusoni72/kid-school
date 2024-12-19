@@ -4,6 +4,7 @@
     align-items: center;
     background-color: var(--blue);
     overflow-y: hidden;
+    padding-bottom: 50px;
 }
 
 .footer-top {
@@ -24,8 +25,27 @@
 .footer-row-1 {
     width: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: end;
+}
+
+.social-icons {
+    display: inline-flex;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.social-icons i {
+    background-color: var(--white);
+    color: var(--blue);
+    border-radius: 100%;
+    padding-inline: 10px;
+    padding-block: 8px;
+}
+
+.social-icons i:hover {
+    background-color: var(--pink);
+    color: var(--white);
 }
 
 .footer-row-1 img {
@@ -38,6 +58,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    gap: 50px;
 }
 
 .footer-row-2 {
@@ -110,16 +131,14 @@
 }
 
 .underline_bg {
-    background-image: url('../../../../public/assets/underline.svg');
-    background-position: center;
-    background-repeat: repeat-x;
-    background-size: 7%;
-    width: 40%;
-    min-height: 150px;
     position: relative;
 }
 
-.underline_bg:first-child:after {
+.underline-container-1, .underline-container-2 {
+    position: relative;
+}
+
+.underline-container-1::after {
     position: absolute;
     content: "";
     background-image: url('../../../../public/assets/pencil_girl_2.png');
@@ -129,11 +148,11 @@
     width: 90px;
     height: 100px;
     z-index: 1;
-    right: 0%;
-    top: -20%;
+    right: -2%;
+    top: -95px;
 }
 
-.underline_bg:last-child:after {
+.underline-container-2::after {
     position: absolute;
     content: "";
     background-image: url('../../../../public/assets/cloud_1.png');
@@ -143,12 +162,12 @@
     width: 120px;
     height: 100px;
     z-index: 1;
-    right: -15%;
-    top: -15%;
+    right: -10%;
+    top: -80px;
 }
 
 .footer-row-4 {
-    height: 180px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -207,5 +226,31 @@
 
     .footer-row-2-col-4-galleries {
         width: 50%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .footer-top {
+        background-size: 1080%;
+    }
+
+    .footer-row-2, .footer-row-4 {
+        flex-direction: column;
+    }
+
+    .footer-row-2 div {
+        width: 90%;
+    }
+
+    .underline-container-2, .underline-container-1::after, .underline-container-2::after, .footer-row-4-col-2 {
+        display: none;
+    }
+
+    .underline_bg {
+        width: 100%;
+    }
+
+    .footer-row-4-col-1 {
+        width: 80%;
     }
 }

@@ -18,6 +18,8 @@ export default function Testimonial({ data }) {
       <Carousel
         responsive={data.responsive}
         infinite={true}
+        customTransition="fadeInOut 0.4s ease"
+        transitionDuration={400}
         containerClass='testimonial-carousel'
         itemClass='testimonial-item'
       >

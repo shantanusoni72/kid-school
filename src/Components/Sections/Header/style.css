@@ -3,6 +3,18 @@
         transform: translateY(10px);
         opacity: 0;
     }
+    25% {
+        transform: translateY(8px);
+        opacity: 0.2;
+    }
+    50% {
+        transform: translateY(6px);
+        opacity: 0.4;
+    }
+    75% {
+        transform: translateY(4px);
+        opacity: 0.6;
+    }
     100% {
         transform: translateY(0px);
         opacity: 1;
@@ -33,6 +45,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: var(--white);
 }
 
 .header {
@@ -82,14 +95,13 @@
     content: "";
     position: absolute;
     left: 0;
-    top: 50%; 
-    transform: translateY(-50%);
     background-image: url('../../../../public/assets/canyon.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 24px;
     height: 24px;
+    transition: 0.4s ease-in-out;
 }
 
 .header-menu-anchor:hover a {
@@ -100,15 +112,13 @@
     content: "";
     position: absolute;
     left: 0; 
-    top: 50%;
-    transform: translateY(-50%);
     background-image: url('../../../../public/assets/canyon.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     width: 24px;
     height: 24px;
-    animation: candleRising 0.3s linear;
+    animation: candleRising 0.2s ease-in-out;
 }
 
 .header-menu li img.show {
@@ -218,12 +228,34 @@
 }
 
 @media screen and (max-width: 1280px) {
-    .header-menu {
+    .header-menu, .fa-bars span {
         display: none;
     }
 
     .fa-bars {
         display: block;
+    }
+
+    .header {
+        padding-block: 0px;
+    }
+    
+    .header-logo {
+        width: 11.5%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header-container {
+        width: 95%;
+    }
+    
+    .header {
+        justify-content: space-between;
+    }
+
+    .header-logo {
+        width: 15%;
     }
 }
 
@@ -233,6 +265,7 @@
     }
 
     .header {
+        justify-content: space-around;
         padding-block: 0px;
     }
 

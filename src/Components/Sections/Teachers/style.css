@@ -7,6 +7,7 @@
 
 .teachers-container {
     padding-block: 80px;
+    background-color: var(--white);
 }
 
 .teacher-row-1 {

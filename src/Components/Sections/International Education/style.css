@@ -26,6 +26,7 @@
     flex-direction: column;
     align-items: center;
     padding-block: 40px;
+    background-color: var(--white);
 }
 
 .intedu-row-1 {
@@ -120,11 +121,34 @@
     }
 }
 
+@keyframes openGoldenWindowOnNormal {
+    0% {
+        width: 95%;
+        height: 93%;
+        opacity: 1;
+    }
+
+    100% {
+        width: 98%;
+        height: 98%;
+        opacity: 0;
+    }
+}
+
 @keyframes openEyeWindow {
     from {
-        width: 100%;
-        height: 100%;
-        transform: scale(0.2);
+        transform: scale(0.5);
+        opacity: 0;
+    }
+}
+
+@keyframes openEyeWindowOnNormal {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(0.5);
         opacity: 0;
     }
 }
@@ -144,30 +168,65 @@
     width: 45%;
 }
 
+.flex-row-1-col-1::before {
+    position: absolute;
+    content: "";
+    background-color: var(--gold);
+    opacity: 0.55;
+    transition: 0.3s all cubic-bezier(0.41, 0.01, 0.35);
+    animation: openGoldenWindowOnNormal linear 0.2s;
+    border-radius: 30px;
+}
+
+.flex-row-1-col-1::after {
+    position: absolute;
+    content: "";
+    background-image: url('../../../../public/assets/eyes.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80px;
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.3s all cubic-bezier(0.41, 0.01, 0.35);
+    animation: openEyeWindowOnNormal linear 0.2s;
+    cursor: pointer;
+}
+
+.flex-row-1-col-1:hover::before {
+    position: absolute;
+    content: "";
+    background-color: var(--gold);
+    opacity: 0.55;
+    width: 95%;
+    height: 93%;
+    transition: 0.3s all cubic-bezier(0.41, 0.01, 0.35);
+    animation: openGoldenWindow linear 0.2s;
+    border-radius: 30px;
+}
+
 .flex-row-1-col-1:hover::after {
     position: absolute;
     content: "";
     background-image: url('../../../../public/assets/eyes.svg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 15%;
-    background-color: var(--gold);
-    opacity: 0.55;
-    width: 92%;
-    height: 90%;
+    background-size: 80px;
+    opacity: 1;
+    width: 100px;
+    height: 100px;
+    transform: scale(1);
+    transition: 0.3s all cubic-bezier(0.41, 0.01, 0.35);
     animation: openEyeWindow linear 0.2s;
-    border-radius: 40px;
     cursor: pointer;
 }
 
 .flex-row-1-col-1 .inner img {
     width: 100%;
-    border: 7px solid transparent;
-    border-radius: 40px;
+    border-radius: 30px;
 }
 
 .flex-row-1-col-1:hover img {
-    border-color: var(--gold);
+    box-shadow: 0 0 0 5px var(--gold)
 }
 
 .flex-row-1-col-2 {
@@ -193,7 +252,15 @@
 
 .flex-row-1-col-2-part-1 .inner img {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 30px;
+}
+
+.flex-row-1-col-2-part-1 .inner:first-child:hover img {
+    box-shadow: 0 0 0 5px var(--gold);
+}
+
+.flex-row-1-col-2-part-1 .inner:last-child:hover img {
+    box-shadow: 0 0 0 5px var(--gold);
 }
 
 .flex-row-1-col-2-part-2 .inner {
@@ -204,25 +271,105 @@
     align-items: center;
 }
 
+.flex-row-1-col-2-part-1 .inner::before {
+    position: absolute;
+    content: "";
+    background-color: var(--gold);
+    opacity: 0.55;
+    transition: 0.3s all cubic-bezier(0.41, 0.01, 0.35);
+    animation: openGoldenWindowOnNormal linear 0.2s;
+    border-radius: 30px;
+}
+
+.flex-row-1-col-2-part-1 .inner::after {
+    position: absolute;
+    content: "";
+    background-image: url('../../../../public/assets/eyes.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80px;
+    opacity: 1;
+    width: 0px;
+    height: 0px;
+    transform: scale(1);
+    transition: 0.3s all cubic-bezier(0.41, 0.01, 0.35);
+    animation: openEyeWindowOnNormal linear 0.2s;
+    cursor: pointer;
+}
+
+.flex-row-1-col-2-part-1 .inner:hover::before {
+    position: absolute;
+    content: "";
+    background-color: var(--gold);
+    opacity: 0.55;
+    width: 95%;
+    height: 93%;
+    transition: 0.3s all cubic-bezier(0.41, 0.01, 0.35);
+    animation: openGoldenWindow linear 0.2s;
+    border-radius: 30px;
+}
+
 .flex-row-1-col-2-part-1 .inner:hover::after {
     position: absolute;
     content: "";
     background-image: url('../../../../public/assets/eyes.svg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 15%;
-    background-color: var(--gold);
-    opacity: 0.55;
-    width: 92%;
-    height: 90%;
-    animation: openEyeWindow linear 0.1s;
-    border-radius: 40px;
+    background-size: 80px;
+    opacity: 1;
+    width: 100px;
+    height: 100px;
+    transform: scale(1);
+    transition: 0.3s all cubic-bezier(0.41, 0.01, 0.35);
+    animation: openEyeWindow linear 0.2s;
     cursor: pointer;
 }
 
 .flex-row-1-col-2-part-2 .inner img {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 30px;
+}
+
+.flex-row-1-col-2-part-2:hover .inner img {
+    box-shadow: 0 0 0 5px var(--gold);
+}
+
+.flex-row-1-col-2-part-2 .inner::before {
+    position: absolute;
+    content: "";
+    background-color: var(--gold);
+    opacity: 0.55;
+    transition: 0.3s all cubic-bezier(0.41, 0.01, 0.35);
+    animation: openGoldenWindowOnNormal linear 0.2s;
+    border-radius: 30px;
+}
+
+.flex-row-1-col-2-part-2 .inner::after {
+    position: absolute;
+    content: "";
+    background-image: url('../../../../public/assets/eyes.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80px;
+    opacity: 1;
+    width: 0px;
+    height: 0px;
+    transform: scale(1);
+    transition: 0.3s all cubic-bezier(0.41, 0.01, 0.35);
+    animation: openEyeWindowOnNormal linear 0.2s;
+    cursor: pointer;
+}
+
+.flex-row-1-col-2-part-2 .inner:hover::before {
+    position: absolute;
+    content: "";
+    background-color: var(--gold);
+    opacity: 0.55;
+    width: 95%;
+    height: 93%;
+    transition: 0.3s all cubic-bezier(0.41, 0.01, 0.35);
+    animation: openGoldenWindow linear 0.2s;
+    border-radius: 30px;
 }
 
 .flex-row-1-col-2-part-2 .inner:hover::after {
@@ -231,18 +378,18 @@
     background-image: url('../../../../public/assets/eyes.svg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 15%;
-    background-color: var(--gold);
-    opacity: 0.55;
-    width: 92%;
-    height: 90%;
-    animation: openEyeWindow linear 0.1s;
-    border-radius: 40px;
+    background-size: 80px;
+    opacity: 1;
+    width: 100px;
+    height: 100px;
+    transform: scale(1);
+    transition: 0.3s all cubic-bezier(0.41, 0.01, 0.35);
+    animation: openEyeWindow linear 0.2s;
     cursor: pointer;
 }
 
 .flex-row-1-col-3 {
-    width: 30%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -253,12 +400,54 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 83%;
+    width: 100%;
 }
 
 .flex-row-1-col-3-part-1 .inner img {
     width: 100%;
-    border-radius: 40px;
+    border-radius: 30px;
+}
+
+.flex-row-1-col-3-part-1:hover .inner img {
+    box-shadow: 0 0 0 5px var(--gold);
+}
+
+.flex-row-1-col-3-part-1::before {
+    position: absolute;
+    content: "";
+    background-color: var(--gold);
+    opacity: 0.55;
+    transition: 0.3s all cubic-bezier(0.41, 0.01, 0.35);
+    animation: openGoldenWindowOnNormal linear 0.2s;
+    border-radius: 30px;
+}
+
+.flex-row-1-col-3-part-1::after {
+    position: absolute;
+    content: "";
+    background-image: url('../../../../public/assets/eyes.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80px;
+    opacity: 1;
+    width: 0px;
+    height: 0px;
+    transform: scale(1);
+    transition: 0.3s all cubic-bezier(0.41, 0.01, 0.35);
+    animation: openEyeWindowOnNormal linear 0.2s;
+    cursor: pointer;
+}
+
+.flex-row-1-col-3-part-1:hover::before {
+    position: absolute;
+    content: "";
+    background-color: var(--gold);
+    opacity: 0.55;
+    width: 95%;
+    height: 93%;
+    transition: 0.3s all cubic-bezier(0.41, 0.01, 0.35);
+    animation: openGoldenWindow linear 0.2s;
+    border-radius: 30px;
 }
 
 .flex-row-1-col-3-part-1:hover:after {
@@ -267,13 +456,13 @@
     background-image: url('../../../../public/assets/eyes.svg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 15%;
-    background-color: var(--gold);
-    opacity: 0.55;
-    width: 92%;
-    height: 90%;
-    animation: openEyeWindow linear 0.1s;
-    border-radius: 40px;
+    background-size: 80px;
+    opacity: 1;
+    width: 100px;
+    height: 100px;
+    transform: scale(1);
+    transition: 0.3s all cubic-bezier(0.41, 0.01, 0.35);
+    animation: openEyeWindow linear 0.2s;
     cursor: pointer;
 }
 
@@ -282,12 +471,54 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 83%;
+    width: 100%;
 }
 
 .flex-row-1-col-3-part-2 .inner img {
     width: 100%;
-    border-radius: 40px;
+    border-radius: 30px;
+}
+
+.flex-row-1-col-3-part-2:hover .inner img {
+    box-shadow: 0 0 0 5px var(--gold);
+}
+
+.flex-row-1-col-3-part-2:hover::before {
+    position: absolute;
+    content: "";
+    background-color: var(--gold);
+    opacity: 0.55;
+    width: 95%;
+    height: 93%;
+    transition: 0.3s all cubic-bezier(0.41, 0.01, 0.35);
+    animation: openGoldenWindow linear 0.2s;
+    border-radius: 30px;
+}
+
+.flex-row-1-col-3-part-2::before {
+    position: absolute;
+    content: "";
+    background-color: var(--gold);
+    opacity: 0.55;
+    transition: 0.3s all cubic-bezier(0.41, 0.01, 0.35);
+    animation: openGoldenWindowOnNormal linear 0.2s;
+    border-radius: 30px;
+}
+
+.flex-row-1-col-3-part-2::after {
+    position: absolute;
+    content: "";
+    background-image: url('../../../../public/assets/eyes.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80px;
+    opacity: 1;
+    width: 0px;
+    height: 0px;
+    transform: scale(1);
+    transition: 0.3s all cubic-bezier(0.41, 0.01, 0.35);
+    animation: openEyeWindowOnNormal linear 0.2s;
+    cursor: pointer;
 }
 
 .flex-row-1-col-3-part-2:hover::after {
@@ -296,13 +527,13 @@
     background-image: url('../../../../public/assets/eyes.svg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 15%;
-    background-color: var(--gold);
-    opacity: 0.55;
-    width: 92%;
-    height: 90%;
-    animation: openEyeWindow linear 0.1s;
-    border-radius: 40px;
+    background-size: 80px;
+    opacity: 1;
+    width: 100px;
+    height: 100px;
+    transform: scale(1);
+    transition: 0.3s all cubic-bezier(0.41, 0.01, 0.35);
+    animation: openEyeWindow linear 0.2s;
     cursor: pointer;
 }
 
@@ -334,7 +565,7 @@
         width: 83%;
     }
 
-    .flex-row-1-col-2  {
+    .flex-row-1-col-2 {
         width: 83%;
     }
 
@@ -368,7 +599,11 @@
         width: 100%;
     }
 
-    .flex-row-1-col-2  {
+    .flex-row-1-col-2 {
+        width: 100%;
+    }
+
+    .flex-row-1-col-3 {
         width: 100%;
     }
 

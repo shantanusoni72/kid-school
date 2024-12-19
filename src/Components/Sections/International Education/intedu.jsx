@@ -3,17 +3,6 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import './style.css';
 
 export default function Intedu() {
-    const intedu = {
-        cards: [
-            'assets/g1.jpg',
-            'assets/g2.jpg',
-            'assets/g3.jpg',
-            'assets/g4.jpg',
-            'assets/g5.jpg',
-            'assets/g6.jpg'
-        ]
-    }
-
     return (
         <div className='intedu-container'>
             <div className="intedu-row-1">

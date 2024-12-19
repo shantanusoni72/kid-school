@@ -15,23 +15,23 @@ import Testimonial from '../../Sections/Testimonial/testimonial';
 import Banner from '../../Sections/Banner/banner';
 import './style.css';
 
-export default function Home({ home_page_content }) {
+export default function Home({ data }) {
   return (
     <div className='home'>
       <Hero />
       <About />
-      <Programs data={home_page_content.home_page.program_section} />
+      <Programs data={data.home_page.program_section} />
       <Section_2 />
-      <Facilities data={home_page_content.home_page.facilities_section} />
-      <Banner data={home_page_content.home_page.banner_section} />
+      <Facilities data={data.home_page.facilities_section} />
+      <Banner data={data.home_page.banner_section} />
       <Intedu />
       <Garden />
-      <Teachers data={home_page_content.home_page.teachers_section} />
+      <Teachers data={data.home_page.teachers_section} />
       <div className="hc"></div>
-      <ActivityProgram data={home_page_content.home_page.activity_program_section} />
+      <ActivityProgram data={data.home_page.activity_program_section} />
       <Blog />
       <Methodology />
-      <Testimonial data={home_page_content.home_page.testimonial_section} />
+      <Testimonial data={data.home_page.testimonial_section} />
       <Newsletter />
     </div>
   )

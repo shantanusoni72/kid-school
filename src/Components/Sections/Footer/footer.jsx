@@ -16,6 +16,20 @@ export default function Footer() {
                     <div className="footer-row-2-col-1">
                         <img src='assets/logo_2.png' alt='' />
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusm</p>
+                        <div className="social-icons">
+                            <a href='/'>
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href='/'>
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href='/'>
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href='/'>
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
                     </div>
                     <div className="footer-row-2-col-2">
                         <label>Pages</label>
@@ -64,8 +78,12 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="footer-row-3">
-                    <div className='underline_bg'></div>
-                    <div className='underline_bg'></div>
+                    <div className="underline-container-1">
+                        <img className='underline_bg' src='assets/underline_1.PNG' alt='' />
+                    </div>
+                    <div className="underline-container-2">
+                        <img className='underline_bg' src='assets/underline_1.PNG' alt='' />
+                    </div>
                 </div>
                 <div className="footer-row-4">
                     <div className="footer-row-4-col-1">

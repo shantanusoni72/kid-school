@@ -1,6 +1,7 @@
 .activity-program {
     padding-block: 40px;
     padding-bottom: 140px;
+    background-color: var(--white);
 }
 
 .activity-program-row {
@@ -68,7 +69,7 @@
 }
 
 .activity_program_carousel ul {
-    gap: 60px !important;
+    gap: 90px !important;
 }
 
 .carousel_item {
@@ -162,6 +163,10 @@
     mask-size: contain;
 }
 
+.activity_program_item img.profile:hover {
+    box-shadow: none;
+}
+
 .activity_program_item .profile-wrapper {
     width: 80%;
     box-shadow: 0px 16px 25.92px 1.08px var(--grey-lighter);
@@ -235,6 +240,57 @@ img.rainbow_img {
 
 @media screen and (max-width: 1024px) {
     .activity-program {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding-bottom: 0px;
+    }
+
+    .activity_program_carousel_outer {
+        width: 70%;
+    }
+
+    .carousel_item {
+        width: 480px !important;
+    }
+
+    .activity_program_item {
+        align-items: center;
+    }
+
+    .activity-program-row .animated {
+        width: 86%;
+    }
+
+    .activity_program_item img.profile {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .activity-program-row .animated h1::before {
+        margin-top: -5%;
+        margin-left: 8%;
+    }
+
+    .activity-program-row .animated p {
+        width: 68%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .activity-program-row .animated p {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .activity-program-row .animated h1::before {
+        margin-top: -10%;
+        margin-left: 15%;
+    }
+
+    .activity-program-row .animated p {
+        width: 95%;
     }
 }

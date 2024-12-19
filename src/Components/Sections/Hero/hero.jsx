@@ -1,6 +1,5 @@
 import React from 'react';
 import Carousel from 'react-multi-carousel';
-import ScrollAnimation from 'react-animate-on-scroll';
 import './style.css';
 
 export default function Hero() {

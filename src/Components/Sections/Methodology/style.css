@@ -194,6 +194,8 @@
     .methodology-row-1-col-2 {
         width: 100%;
         text-align: center;
+        display: flex;
+        justify-content: center;
     }
 
     .methodology-row-1-col-2 img {
@@ -265,14 +267,14 @@
     .pause {
         width: 50px;
         height: 60px;
-        top: 60%;
+        top: 23%;
         right: 40%;
     }
 
     .methodology-row-1-col-2::after {
         width: 50px;
         height: 60px;
-        top: 35%;
+        top: 25%;
         right: 40%;
     }
 

@@ -39,6 +39,7 @@
 
 html, body {
     overflow-x: hidden;
+    background-color: var(--gold-lighter);
 }
 
 .hc {
@@ -49,6 +50,7 @@ html, body {
     background-size: contain;
     margin-inline: auto;
     transform: rotate(180deg);
+    background-color: var(--white);
 }
 
 @keyframes textShadow {

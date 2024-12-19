@@ -33,6 +33,7 @@
     justify-content: space-around;
     align-items: end;
     gap: 20px;
+    background-color: var(--white);
     padding-block: 120px;
 }
 

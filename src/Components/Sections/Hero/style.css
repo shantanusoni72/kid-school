@@ -50,7 +50,17 @@
     }
 
     100% {
-        text-shadow: 5px 5px var(--grey);
+        text-shadow: 5.9px 5.9px var(--grey);
+    }
+}
+
+@keyframes tada {
+    0% {
+        transform: scale(0.1);
+    }
+
+    100% {
+        width: scale(1);
     }
 }
 
@@ -110,15 +120,6 @@
     height: 880px;
 }
 
-@keyframes tada {
-    0% {
-        transform: scale(0.1);
-    }
-    100% {
-        width: scale(1);
-    }
-}
-
 .carousel-item-heading {
     width: 80%;
     display: flex;
@@ -126,6 +127,7 @@
     align-items: center;
     transform-origin: center;
     animation: tada linear 0.4s;
+    gap: 15px;
 }
 
 .carousel-item h1 {
@@ -152,7 +154,7 @@
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
     position: relative;
-    z-index: 1;    
+    z-index: 1;
 }
 
 .carousel-item a:hover {
@@ -165,7 +167,7 @@
     line-height: 1.2em;
     width: 45%;
     font-size: 100px;
-    animation: 0.3s ease-in-out 0s infinite alternate both textFickle;
+    animation: 0.4s ease-in-out 0s infinite alternate both textFickle;
 }
 
 .sub-heading.xl {
@@ -181,9 +183,9 @@
     gap: 0px;
     background-position: top center;
     background-repeat: no-repeat;
-    background-size: 133%;
+    background-size: 165%;
     color: var(--white);
-    height: 880px;
+    height: 850px;
 }
 
 .carousel-item.second .inner {
@@ -192,7 +194,7 @@
 }
 
 .carousel-item.second .inner h1 {
-    font-size: 200px;
+    font-size: 100px;
     animation: 0.6s linear infinite textShadow;
     text-align: start;
 }
@@ -203,6 +205,7 @@
 
 .carousel-item.second .inner h3 {
     font-size: 50px;
+    width: 130%;
 }
 
 .carousel-item.second .inner a {
@@ -215,7 +218,7 @@
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
     position: relative;
-    z-index: 1;    
+    z-index: 1;
 }
 
 .carousel-item.second .inner a:hover {
@@ -263,11 +266,11 @@
     }
 
     .cloud-banner.orange {
-        margin-top: -203px;
+        margin-top: -172px;
     }
-    
+
     .cloud-banner.white {
-        margin-top: -19.3%;
+        margin-top: -17%;
     }
 }
 
@@ -278,17 +281,27 @@
         background-size: 210%;
     }
 
+    .carousel-item.carousel-item.second {
+        background-size: 195%;
+    }
+
     .heading.xl {
         width: 80%;
         font-size: 70px;
     }
 
     .cloud-banner.orange {
-        margin-top: -28%;
+        margin-top: -25%;
     }
-    
+
     .cloud-banner.white {
-        margin-top: -28.3%;
+        margin-top: -25%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-item.carousel-item.second {
+        background-size: 200%;
     }
 }
 
@@ -299,13 +312,25 @@
     }
 
     .carousel-item {
-        height: 70%;
+        height: 65%;
         gap: 20px;
         background-size: auto;
     }
 
+    .carousel-item.carousel-item.second {
+        background-size: 300%;
+    }
+
+    .carousel-item.second .carousel-item-heading h1 {
+        font-size: 60px;
+    }
+
+    .carousel-item.second .carousel-item-heading h2, .carousel-item.second .carousel-item-heading h3 {
+        font-size: 30px;
+    }
+
     .heading.xl {
-        width: 80%;
+        width: 82%;
         font-size: 30px;
     }
 
@@ -316,20 +341,16 @@
     .hero .react-multiple-carousel__arrow--left {
         background-size: 50% !important;
         margin-left: 2%;
-        margin-top: 30%;
+        margin-top: 10%;
     }
 
     .hero .react-multiple-carousel__arrow--right {
         background-size: 50% !important;
         margin-right: -20%;
-        margin-top: 30%;
+        margin-top: 10%;
     }
 
-    .cloud-banner.orange {
-        margin-top: -93%;
-    }
-    
-    .cloud-banner.white {
-        margin-top: -92.3%
+    .cloud-banner.orange, .cloud-banner.white {
+        margin-top: -100%;
     }
 }
