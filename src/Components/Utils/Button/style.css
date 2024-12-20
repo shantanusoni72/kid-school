@@ -1,91 +1,86 @@
-.button-container {
+.button {
+    overflow: hidden;
+    padding: 0.7em 0.05em;
+    color: var(--blue-light);
+    border-radius: 40px;
     position: relative;
 }
 
-.button-container::before {
-    position: absolute;
-    content: "";
-    width: 500px;
-    height: 80px;
-    z-index: 2;
-    background-color: var(--gold-lighter);
-    top: -20px;
-    left: -18%;
-    border: 1px solid red;
+.button.simple {
+    padding: 1.5em 1em;
+    background-color: var(--pink);
+    color: var(--white);
+    transition: 0.4s;
+}
+
+.button.simple:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.button.simple::before, .button.simple::after {
+    display: none;
 }
 
 .button::before {
     position: absolute;
     content: "";
-    width: 180px;
+    width: 235px;
     height: 70px;
     background-color: var(--pink);
     transform: skew(30deg);
     opacity: 1;
     z-index: 1;
-    top: -20px;
-    left: -4%;
-    transition: 2s;
+    top: -15px;
+    left: -5%;
+    transition: 0.3s;
 }
 
 .button::after {
     position: absolute;
     content: "";
-    width: 180px;
+    width: 235px;
     height: 70px;
-    background-color: var(--white);
+    background-color: var(--cyan);
     transform: skew(30deg);
     opacity: 1;
     z-index: 0;
     top: -20px;
     left: -4%;
-    transition: 1s;
+    transition: 0.3s;
 }
 
-.button:hover a {
-    color: var(--blue-light);
+.button.white::after {
+    background-color: var(--white);
+}
+
+.button.white a {
+    color: var(--white);
+}
+
+.button.white:hover a {
+    color: var(--cyan);
+}
+
+.button a {
+    padding: 0.5em 2em;
+    font-size: calc(var(--h4) + 2px);
+    color: var(--white);
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
 }
 
 .button:hover::before {
     left: 105%;
 }
 
-.button a {
-    padding: 0.9em 2em;
-    font-size: calc(var(--h4) + 2px);
-    /* background-color: var(--pink); */
-    background-color: transparent;
-    color: var(--white);
-    border: 0px;
-    border-radius: 40px;
-    text-decoration: none;
-    position: relative;
-    z-index: 3;
-    border: 1px solid blue;
-}
-
-.button a:hover {
-    /* background-color: var(--blue-light); */
-}
-
-.button.small a {
-    padding: 0.5em 2em;
-    font-size: calc(var(--h4) + 2px);
-}
-
-.button.big_long a {
-    padding: 1.2em 3.8em;
-    background-color: var(--pink);
-    transition: 0.5s;
-}
-
-.button.big_long a:hover {
-    background-color: var(--blue);
-}
-
 @media screen and (max-width: 440px) {
-    .button.big_long a {
-        padding: 0.8em 2.7em;
-        font-size: calc(var(--h4) - 2px);
+    .button.simple {
+        padding: 0.5em 0.5em;
+    }
+
+    .button.simple a {
+        padding: 0.5em 1em;
     }
 }

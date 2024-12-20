@@ -120,7 +120,6 @@
     cursor: pointer;
 }
 
-
 .teacher_item:hover::before {
     position: absolute;
     content: "";
@@ -210,7 +209,6 @@
     position: absolute;
     left: 6%;
     top: 35%;
-    /* z-index: -1; */
 }
 
 .teacher_carousel .react-multiple-carousel__arrow--left:hover {
@@ -232,7 +230,6 @@
     position: absolute;
     right: 6%;
     top: 35%;
-    /* z-index: -1; */
 }
 
 .teacher_carousel .react-multiple-carousel__arrow--right:hover {
@@ -369,12 +366,12 @@
     }
     
     .teacher_carousel .react-multiple-carousel__arrow--left {
-        left: 35%;
+        left: 30%;
         margin-top: 45%;
     }
     
     .teacher_carousel .react-multiple-carousel__arrow--right {
-        right: 22%;
+        right: 30%;
         margin-top: 45%;
     }
 }

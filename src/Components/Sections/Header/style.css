@@ -3,18 +3,6 @@
         transform: translateY(10px);
         opacity: 0;
     }
-    25% {
-        transform: translateY(8px);
-        opacity: 0.2;
-    }
-    50% {
-        transform: translateY(6px);
-        opacity: 0.4;
-    }
-    75% {
-        transform: translateY(4px);
-        opacity: 0.6;
-    }
     100% {
         transform: translateY(0px);
         opacity: 1;
@@ -42,10 +30,15 @@
 }
 
 .header-container {
+    position: fixed;
+    top: 0;
     width: 100%;
     display: flex;
     justify-content: center;
     background-color: var(--white);
+    z-index: 1;
+    transition: top 0.4s;
+box-shadow: 10px 11px 80px -50px rgba(0,0,0,0.62);
 }
 
 .header {
@@ -89,6 +82,7 @@
 
 .header-menu-anchor.selected a {
     color: var(--gold);
+    transition: 0.5s ease;
 }
 
 .header-menu-anchor.selected a::before {
@@ -101,11 +95,11 @@
     background-size: cover;
     width: 24px;
     height: 24px;
-    transition: 0.4s ease-in-out;
 }
 
-.header-menu-anchor:hover a {
+.header-menu-anchor a {
     color: var(--gold);
+    transition: 0.5s ease;
 }
 
 .header-menu-anchor:hover a::before {
@@ -118,7 +112,8 @@
     background-size: contain;
     width: 24px;
     height: 24px;
-    animation: candleRising 0.2s ease-in-out;
+    animation: candleRising 0.5s ease;
+    
 }
 
 .header-menu li img.show {
@@ -247,7 +242,7 @@
 
 @media screen and (max-width: 992px) {
     .header-container {
-        width: 95%;
+        width: 100%;
     }
     
     .header {

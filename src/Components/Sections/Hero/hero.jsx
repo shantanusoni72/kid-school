@@ -1,13 +1,10 @@
 import React from 'react';
 import Carousel from 'react-multi-carousel';
+import Button from '../../Utils/Button/button';
 import './style.css';
 
 export default function Hero() {
     const responsive = {
-        superLargeDesktop: {
-            breakpoint: { max: 4000, min: 3000 },
-            items: 1
-        },
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
             items: 1
@@ -28,7 +25,7 @@ export default function Hero() {
                     <div className="carousel-item-heading">
                         <h2 className='heading xl'>Learning With Fun</h2>
                         <h3 className='sub-heading xl'>Center For Excellence</h3>
-                        <a href='#'>Know More</a>
+                        <Button text='Read More' link='#' type="white" />
                     </div>
                 </div>
                 <div className='carousel-item second' style={{ backgroundImage: `url('assets/slider-2.jpg')` }}>
@@ -37,7 +34,7 @@ export default function Hero() {
                             <h1>20%</h1>
                             <h2>Flat Off</h2>
                             <h3>On Registration</h3>
-                            <a href='#'>Know More</a>
+                            <Button link="#" text="Learn More" type="white" />
                         </div>
                     </div>
                 </div>
@@ -46,7 +43,7 @@ export default function Hero() {
                     <div className="carousel-item-heading">
                         <h2 className='heading xl'>Children Focused Education</h2>
                         <h3 className='sub-heading xl'>Early Education</h3>
-                        <a href='#'>Know More</a>
+                        <Button link="#" text="Learn More" type="white" />
                     </div>
                 </div>
             </Carousel>

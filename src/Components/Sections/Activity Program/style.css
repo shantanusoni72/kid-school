@@ -9,6 +9,21 @@
     display: flex;
     justify-content: center;
     padding-block: 30px;
+    position: relative;
+}
+
+.activity-program-row::after {
+    position: absolute;
+    content: "";
+    background-image: url('../../../../public/assets/rainbow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 95%;
+    width: 200px;
+    height: 200px;
+    top: 3%;
+    right: 15%;
 }
 
 .activity-program-row .animated {
@@ -265,6 +280,19 @@ img.rainbow_img {
     .activity_program_item img.profile {
         width: 60%;
     }
+
+    .activity_program_carousel ul {
+        gap: 130px !important;
+    }
+
+    .activity_program_item.first a, .activity_program_item.activity_program_item.second a {
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    .activity-program-row::after {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -276,11 +304,36 @@ img.rainbow_img {
     .activity-program-row .animated p {
         width: 68%;
     }
+
+    .activity-program-row .animated {
+        width: 86%;
+    }
+
+    .activity_program_item img.profile {
+        width: 50%;
+    }
+
+    .activity_program_carousel ul {
+        gap: 0px !important;
+    }
+
+    .activity_program_item p {
+        width: 95%;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .activity-program-row .animated p {
         width: 70%;
+    }
+
+    .activity_program_carousel {
+        width: 90%;
+        padding-block: 55px;
+    }
+
+    .activity_program_carousel .react-multiple-carousel__arrow--left, .activity_program_carousel .react-multiple-carousel__arrow--right {
+        background-size: 75% !important;
     }
 }
 
@@ -292,5 +345,25 @@ img.rainbow_img {
 
     .activity-program-row .animated p {
         width: 95%;
+    }
+
+    .carousel_item {
+        width: 30%;
+    }
+
+    .activity_program_carousel ul {
+        gap: 20px !important;
+    }
+
+    .activity_program_carousel {
+        width: 100%;
+    }
+
+    .activity_program_item {
+        width: 80%;
+    }
+
+    .activity_program_item p {
+        width: 60%;
     }
 }

@@ -55,7 +55,9 @@ export default function Methodology() {
                         <p>
                             Morbi mauris augue, pulvinar quis luctus eget, pretium sed massa. Phasellus gravida lacus quis eros lobortis, nec dapibus quam gravida. Duis sed augue vitae felis pellentesque varius nec quis nunc.
                         </p>
-                        <Button text='Creative Works' link='/' type='small' />
+                        <div className="button-wrapper-met">
+                            <Button text='Creative Works' link='/' />
+                        </div>
                     </div>
                     <div className="methodology-row-1-col-2">
                         <img src={getImage} alt='' />

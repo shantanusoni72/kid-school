@@ -38,7 +38,7 @@ export default function Facilities({ data }) {
               <div className="facilities-card-lower">
                 <div className="svg" style={{ maskImage: `url(${item.side_image})` }}></div>
                 <div className="button-div">
-                  <Button text={item.button.text} link={item.button.link} type='small' />
+                  <Button text={item.button.text} link={item.button.link} type='white' />
                 </div>
               </div>
             </ScrollAnimation>

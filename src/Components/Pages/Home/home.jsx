@@ -29,7 +29,7 @@ export default function Home({ data }) {
       <Teachers data={data.home_page.teachers_section} />
       <div className="hc"></div>
       <ActivityProgram data={data.home_page.activity_program_section} />
-      <Blog />
+      <Blog data={data.home_page.blog_section} />
       <Methodology />
       <Testimonial data={data.home_page.testimonial_section} />
       <Newsletter />

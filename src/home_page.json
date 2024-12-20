@@ -483,6 +483,32 @@
           "image": "assets/t4.jpg"
         }
       ]
+    },
+    "blog_section": {
+      "banner": {
+        "label": "Blog",
+        "heading": "News about our Education"
+      },
+      "cards": [
+        {
+          "heading": "Kindergarten Outdoor Play Area",
+          "paragraph": "An Overview Aliquam sem fringilla ut morbi tincidunt augue interdum velit. Viverra adipiscing at...",
+          "link": "/",
+          "date": "Dec 29, 2022"
+        },
+        {
+          "heading": "Well Equipped With Indoor Class Rooms",
+          "paragraph": "An Overview Quisque id diam vel quam. Vestibulum mattis ullamcorper velit sed ullamcorper morbi...",
+          "link": "/",
+          "date": "Dec 29, 2022"
+        },
+        {
+          "heading": "Education Filled With Fun & Games",
+          "paragraph": "An Overview Nisl rhoncus mattis rhoncus urna. Pellentesque massa placerat duis ultricies lacus sed...",
+          "link": "/",
+          "date": "Dec 29, 2022"
+        }
+      ]
     }
   }
 }

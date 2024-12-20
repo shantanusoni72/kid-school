@@ -5,6 +5,17 @@ export default function Header() {
     const [getMenuItem, setMenuItem] = useState(1);
     const [getMenuItemOnMobile, setMenuItemOnMobile] = useState(1);
 
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos < currentScrollPos) {
+            document.querySelector(".header-container").style.top = "0";
+        } else {
+            document.querySelector(".header-container").style.top = "-200px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+
     return (<>
         <div className="header-container">
             <div className='header'>

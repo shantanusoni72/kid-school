@@ -21,7 +21,7 @@ export default function About() {
               Phasellus gravida lacus quis eros lobortis, nec dapibus quam gravida. Duis sed augue vitae felis pellentesque varius nec quis nunc. Morbi mauris augue, pulvinar quis luctus eget, pretium sed massa.
             </p>
             <div className="about-button">
-              <Button text='Read More' link='/' type='small' />
+              <Button text='Read More' link='/' />
             </div>
           </div>
           <div className="about-row-2-image">

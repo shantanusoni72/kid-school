@@ -7,7 +7,7 @@ export default function BigInput() {
         <div className='big_input'>
             <input className='newsletter_input' type='email' placeholder='Enter Mail Address Here...' />
             <div className="newsletter_btn">
-                <Button text='Subcribe' link='/' type='big_long' />
+                <Button text='Subcribe' link='/' type='simple' />
             </div>
         </div>
     )
