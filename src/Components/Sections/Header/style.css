@@ -3,6 +3,7 @@
         transform: translateY(10px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0px);
         opacity: 1;
@@ -13,6 +14,7 @@
     0% {
         transform: translateX(300px);
     }
+
     100% {
         transform: translateX(0);
     }
@@ -23,6 +25,7 @@
         transform: translateX(0px);
         visibility: visible;
     }
+
     100% {
         transform: translateX(300px);
         visibility: hidden;
@@ -38,7 +41,7 @@
     background-color: var(--white);
     z-index: 1;
     transition: top 0.4s;
-box-shadow: 10px 11px 80px -50px rgba(0,0,0,0.62);
+    box-shadow: 10px 11px 80px -50px rgba(0, 0, 0, 0.62);
 }
 
 .header {
@@ -105,7 +108,7 @@ box-shadow: 10px 11px 80px -50px rgba(0,0,0,0.62);
 .header-menu-anchor:hover a::before {
     content: "";
     position: absolute;
-    left: 0; 
+    left: 0;
     background-image: url('../../../../public/assets/canyon.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -113,7 +116,7 @@ box-shadow: 10px 11px 80px -50px rgba(0,0,0,0.62);
     width: 24px;
     height: 24px;
     animation: candleRising 0.5s ease;
-    
+
 }
 
 .header-menu li img.show {
@@ -125,7 +128,7 @@ box-shadow: 10px 11px 80px -50px rgba(0,0,0,0.62);
     display: none;
 }
 
-.header-menu li > *:hover {
+.header-menu li>*:hover {
     color: var(--gold);
 }
 
@@ -179,11 +182,11 @@ box-shadow: 10px 11px 80px -50px rgba(0,0,0,0.62);
     animation: closeMobileMenu 0.4s;
 }
 
-.mobile-menu ~ .home {
+.mobile-menu~.home {
     filter: brightness(0.5);
 }
 
-.mobile-menu.hidden ~ .home {
+.mobile-menu.hidden~.home {
     filter: brightness(1);
 }
 
@@ -199,7 +202,7 @@ box-shadow: 10px 11px 80px -50px rgba(0,0,0,0.62);
     align-items: center;
     padding: 10px;
     border-top: 1px solid rgb(231, 231, 231);
-    border-bottom: 1px solid rgb(231, 231, 231);   
+    border-bottom: 1px solid rgb(231, 231, 231);
 }
 
 .mobile-menu ul li a {
@@ -218,12 +221,15 @@ box-shadow: 10px 11px 80px -50px rgba(0,0,0,0.62);
     background-color: var(--pink);
 }
 
-.mobile-menu ul li.selected a, .mobile-menu ul li.selected i {
+.mobile-menu ul li.selected a,
+.mobile-menu ul li.selected i {
     color: var(--white);
 }
 
 @media screen and (max-width: 1280px) {
-    .header-menu, .fa-bars span {
+
+    .header-menu,
+    .fa-bars span {
         display: none;
     }
 
@@ -234,7 +240,7 @@ box-shadow: 10px 11px 80px -50px rgba(0,0,0,0.62);
     .header {
         padding-block: 0px;
     }
-    
+
     .header-logo {
         width: 11.5%;
     }
@@ -244,7 +250,7 @@ box-shadow: 10px 11px 80px -50px rgba(0,0,0,0.62);
     .header-container {
         width: 100%;
     }
-    
+
     .header {
         justify-content: space-between;
     }

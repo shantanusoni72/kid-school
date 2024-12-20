@@ -396,22 +396,22 @@
       "cards": [
         {
           "image": "assets/calculator.svg",
-          "number": "3564+",
+          "number": 3564,
           "text": "Students Admission"
         },
         {
           "image": "assets/book_guy.svg",
-          "number": "156+",
+          "number": 156,
           "text": "Total No.of Class"
         },
         {
           "image": "assets/pouch_guy.svg",
-          "number": "75+",
+          "number": 75,
           "text": "No.of Teachers"
         },
         {
           "image": "assets/canyon.svg",
-          "number": "8+",
+          "number": 8,
           "text": "Years Experience"
         }
       ]
