@@ -24,7 +24,7 @@ export default function Home({ data }) {
       <Section_2 />
       <Facilities data={data.home_page.facilities_section} />
       <Banner data={data.home_page.banner_section} />
-      <Intedu />
+      <Intedu data={data.home_page.international_education} />
       <Garden />
       <Teachers data={data.home_page.teachers_section} />
       <div className="hc"></div>

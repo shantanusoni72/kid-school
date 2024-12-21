@@ -2,7 +2,7 @@ import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import './style.css';
 
-export default function Intedu() {
+export default function Intedu({ data }) {
     return (
         <div className='intedu-container'>
             <div className="intedu-row-1">
@@ -15,9 +15,9 @@ export default function Intedu() {
                 <div className='intedu-row-1-col-2'>
                     <ScrollAnimation animateIn='bounceInUp' animateOnce={true}>
                         <img src='assets/cap.svg' alt='' />
-                        <h1>International Education</h1>
-                        <h2>Bicultural Students</h2>
-                        <p>Semper cras auctor neque vitae tempus quam pellentesque nec nam. Egestas sed sed risus pretium quam vulputate dignissim. At lectus urna duis convallis convallis tellus id. Diam in arcu cursus euismod.</p>
+                        <h1>{data.banner.label}</h1>
+                        <h2>{data.banner.heading}</h2>
+                        <p>{data.banner.paragraph}</p>
                     </ScrollAnimation>
                 </div>
                 <div className="intedu-row-1-col-3">

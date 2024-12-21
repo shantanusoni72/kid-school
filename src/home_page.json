@@ -228,6 +228,13 @@
         }
       ]
     },
+    "international_education": {
+      "banner": {
+        "label": "International Education",
+        "heading": "Bicultural Students",
+        "paragraph": "Semper cras auctor neque vitae tempus quam pellentesque nec nam. Egestas sed sed risus pretium quam vulputate dignissim. At lectus urna duis convallis convallis tellus id. Diam in arcu cursus euismod."
+      }
+    },
     "teachers_section": {
       "responsive": {
         "desktop": {

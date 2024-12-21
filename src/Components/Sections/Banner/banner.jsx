@@ -60,6 +60,13 @@ export default function Banner({ data }) {
 
     return (
         <div className='banner-container'>
+            <div className="banner-background">
+                <span class="char-a">a</span>
+                <span class="char-b">b</span>
+                <span class="char-4">4</span>
+                <span class="char-3">3</span>
+                <span class="char-5">5</span>
+            </div>
             <div className="banner">
                 {
                     data.cards.map((item, index) => (
@@ -67,7 +74,7 @@ export default function Banner({ data }) {
                             <div className="banner-item-thumb">
                                 <img src={item.image} about={item.text} />
                             </div>
-                            <CountUpAnimation initialValue={item.number/2} targetValue={item.number} />
+                            <CountUpAnimation initialValue={item.number / 2} targetValue={item.number} />
                             <p>{item.text}</p>
                         </div>
                     ))

@@ -20,7 +20,7 @@ export default function Hero() {
     };
     return (
         <div className='hero'>
-            <Carousel responsive={responsive} infinite={true}>
+            <Carousel responsive={responsive} infinite={true} containerClass='heroCarousel'>
                 <div className='carousel-item' style={{ backgroundImage: `url('assets/slider-1.jpg')` }}>
                     <div className="carousel-item-heading">
                         <h2 className='heading xl'>Learning With Fun</h2>

@@ -1,15 +1,3 @@
-@keyframes candleRising {
-    0% {
-        transform: translateY(10px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-
 @keyframes openMobileMenu {
     0% {
         transform: translateX(300px);
@@ -36,12 +24,22 @@
     position: fixed;
     top: 0;
     width: 100%;
-    display: flex;
     justify-content: center;
     background-color: var(--white);
     z-index: 1;
     transition: top 0.4s;
     box-shadow: 10px 11px 80px -50px rgba(0, 0, 0, 0.62);
+}
+
+.header-container.sticky {
+    display: flex;
+}
+
+.header-container.normal {
+    position: relative;
+    display: none;
+    transform: translateY(0px);
+    transition: 0.4s;
 }
 
 .header {
@@ -98,6 +96,8 @@
     background-size: cover;
     width: 24px;
     height: 24px;
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .header-menu-anchor a {
@@ -105,7 +105,7 @@
     transition: 0.5s ease;
 }
 
-.header-menu-anchor:hover a::before {
+.header-menu-anchor a::before {
     content: "";
     position: absolute;
     left: 0;
@@ -115,8 +115,14 @@
     background-size: contain;
     width: 24px;
     height: 24px;
-    animation: candleRising 0.5s ease;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.4s;
+}
 
+.header-menu-anchor:hover a::before {
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .header-menu li img.show {

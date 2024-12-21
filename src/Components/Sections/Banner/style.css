@@ -9,6 +9,7 @@
     mask-position: center;
     mask-repeat: no-repeat;
     mask-size: cover;
+    position: relative;
 }
 
 .banner {
@@ -19,10 +20,82 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    position: relative;
+}
+
+.banner-background {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    top: 13%;
+}
+
+@keyframes charDancing {
+    0% {
+        transform: translateY(-10px);
+    }
+    25% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    75% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.banner-background span {
+    font-size: 60px;
+    font-family: var(--ff-secondary);
+    animation: charDancing 3.3s infinite linear;
+}
+
+
+.banner-background span:nth-child(1) {
+    color: var(--blue-light);
+    position: absolute;
+    left: 5%;
+    top: -30px;
+    font-size: 80px;
+}
+
+.banner-background span:nth-child(2) {
+    color: var(--yellow);
+    position: absolute;
+    left: 28%;
+    top: -10px;
+    font-size: 80px;
+}
+
+.banner-background span:nth-child(3) {
+    color: var(--blue);
+    position: absolute;
+    right: 34%;
+}
+
+.banner-background span:nth-child(4) {
+    color: var(--blue-light);
+    position: absolute;
+    right: 25%;
+    top: 30px;
+
+}
+
+.banner-background span:nth-child(5) {
+    color: var(--yellow);
+    position: absolute;
+    right: 10%;
 }
 
 .banner-item {
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .banner-item-thumb {
@@ -36,6 +109,38 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.banner-item:first-child::before {
+    width: 150px;
+    height: 150px;
+}
+
+.banner-item:first-child:hover::before {
+    opacity: 1;
+    right: -1.5%;
+}
+
+.banner-item::before {
+    position: absolute;
+    content: "";
+    mask-image: url('../../../../public/assets/banner_background.svg');
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    background-color: var(--pink);
+    opacity: 0;
+    width: 160px;
+    height: 150px;
+    z-index: 0;
+    right: 0%;
+    top: 0%;
+    transition: 0.4s;
+}
+
+.banner-item:hover::before {
+    opacity: 1;
+    right: -10%;
 }
 
 .banner-item-thumb img {
@@ -63,6 +168,10 @@
         width: 50%;
         flex-wrap: wrap;
         gap: 50px;
+    }
+
+    .banner-background {
+        display: none;
     }
 }
 
