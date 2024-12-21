@@ -6,9 +6,10 @@ This Kid Cool Site is made possible with HTML, CSS, CSS Animations and React.
 
 
 ## Gallery
-![image](https://github.com/user-attachments/assets/7ff3ff8a-03ea-4654-ac5b-2a58f2b4286a)
-![image](https://github.com/user-attachments/assets/a3ba5c7b-b124-49b4-b3f4-6dc1b76023a3)
-![image](https://github.com/user-attachments/assets/a8bcc153-7708-4939-a16b-4ad18a568c7e)
+![image](https://github.com/user-attachments/assets/70be1d2b-8cf3-44b8-88d6-840ff6066c64)
+![image](https://github.com/user-attachments/assets/5f3332ef-1766-4190-b704-52b82c665873)
+![image](https://github.com/user-attachments/assets/b62625b9-e119-4057-bb97-11da545d7c4c)
+
 
 
 ## Setup
